@@ -1,4 +1,24 @@
 name: "main"
+instances {
+  id: "Car1"
+  prototype: "/car/Car1.go"
+  position {
+    x: 170.0
+    y: 300.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.060003888
+    z: 0.0
+    w: 0.99819815
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "go"
