@@ -16,8 +16,8 @@ components {
 embedded_components {
   id: "sprite"
   type: "sprite"
-  data: "tile_set: \"/car/Car1.atlas\"\n"
-  "default_animation: \"New Animation\"\n"
+  data: "tile_set: \"/builtins/graphics/particle_blob.tilesource\"\n"
+  "default_animation: \"anim\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""

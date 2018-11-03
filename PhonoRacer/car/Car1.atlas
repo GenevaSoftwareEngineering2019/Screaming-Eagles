@@ -1,43 +1,43 @@
 animations {
   id: "New Animation"
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police00.png"
+    image: "/assets/images/police00.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police01.png"
+    image: "/assets/images/police01.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police02.png"
+    image: "/assets/images/police02.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police03.png"
+    image: "/assets/images/police03.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police04.png"
+    image: "/assets/images/police04.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police05.png"
+    image: "/assets/images/police05.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police06.png"
+    image: "/assets/images/police06.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police07.png"
+    image: "/assets/images/police07.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police08.png"
+    image: "/assets/images/police08.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police09.png"
+    image: "/assets/images/police09.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police10.png"
+    image: "/assets/images/police10.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police11.png"
+    image: "/assets/images/police11.png"
   }
   images {
-    image: "/assets/images/Genesis 32X SCD - The Adventures of Batman and Robin - Police Car/police12.png"
+    image: "/assets/images/police12.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 60
