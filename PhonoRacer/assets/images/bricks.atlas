@@ -1,0 +1,21 @@
+images {
+  image: "/assets/images/SP2018 Logo.png"
+}
+images {
+  image: "/assets/images/RaceCar.png"
+}
+images {
+  image: "/assets/images/Flags.png"
+}
+images {
+  image: "/assets/images/Play Button.png"
+}
+images {
+  image: "/assets/images/Achieve Button.png"
+}
+images {
+  image: "/assets/images/Exit Button.png"
+}
+margin: 0
+extrude_borders: 0
+inner_padding: 0
