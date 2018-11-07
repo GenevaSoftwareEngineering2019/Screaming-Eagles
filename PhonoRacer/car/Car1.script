@@ -4,7 +4,7 @@ local max_y = 600
 function init(self)
 	-- Let the script receive input from the player
 	msg.post(".", "acquire_input_focus")
-	-- the current speed of the space ship
+	-- the current speed of the car 
 	self.speed = 0
 
 	-- Animate the ship so it's swaying back and forth
