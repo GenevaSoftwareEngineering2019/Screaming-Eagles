@@ -1,4 +1,4 @@
-function init(self)
+--[[function init(self)
 	msg.post("#", "show_start")
 	self.active = false
 end
@@ -21,6 +21,6 @@ function on input(self, action id, action)
 				msg.post("#level_select", "show_level_select")
 			end
 		end
-	end
+	end--]]
 	
 		
