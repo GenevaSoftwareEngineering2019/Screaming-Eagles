@@ -3,15 +3,15 @@ instances {
   id: "Car1"
   prototype: "/car/Car1.go"
   position {
-    x: 302.0
+    x: 407.0
     y: 300.0
     z: 0.0
   }
   rotation {
     x: 0.0
-    y: 0.060003888
+    y: 0.0
     z: 0.0
-    w: 0.99819815
+    w: 1.0
   }
   scale3 {
     x: 1.0
