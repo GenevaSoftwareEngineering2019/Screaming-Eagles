@@ -1,7 +1,7 @@
 script: ""
 textures {
   name: "bricks"
-  texture: "/assets/images/bricks.atlas"
+  texture: "/Background/background/Phono Racer/images/bricks.atlas"
 }
 background_color {
   x: 0.0

@@ -1,8 +1,8 @@
 images {
-  image: "/assets/images/background.png"
+  image: "/Background/background/Phono Racer/images/background.png"
 }
 images {
-  image: "/assets/images/logo.png"
+  image: "/Background/background/Phono Racer/images/logo.png"
 }
 images {
   image: "/builtins/graphics/particle_blob.png"
