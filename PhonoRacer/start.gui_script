@@ -13,7 +13,7 @@ function on message(self, message id, message, sender)
 		end
 	end
 
-	function on input(self, action id, action)
+function on input(self, action id, action)
 		if action id == hash("touch") and action.pressed and self.active then
 			local start = gui.get node("start")
 			if gui.pick node(start, action.x, action.y) then
