@@ -1,0 +1,26 @@
+function init(self)
+	msg.post("#", "show_start")
+	self.active = false
+end
+
+function on message(self, message id, message, sender)
+	if message id == hash("show_start") then
+		msg.post("#", "enable")
+		self.active = true
+		elself message id == hash("hide_start") then
+			msg.post("#", "disable")
+			self.active = false
+		end
+	end
+
+function on input(self, action id, action)
+		if action id == hash("touch") and action.pressed and self.active then
+			local start = gui.get node("start")
+			if gui.pick node(start, action.x, action.y) then
+				msg.post("#", "hide start")
+				msg.post("#level_select", "show_level_select")
+			end
+		end
+	end
+	
+		
