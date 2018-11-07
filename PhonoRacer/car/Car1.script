@@ -1,6 +1,3 @@
-local min_y = 60
-local max_y = 600
-
 function init(self)
 	msg.post(".", "acquire_input_focus") 
 	self.vel = vmath.vector3()     
