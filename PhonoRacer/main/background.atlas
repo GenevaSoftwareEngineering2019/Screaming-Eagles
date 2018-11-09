@@ -1,0 +1,21 @@
+images {
+  image: "/assets/Background/Car 2.png"
+}
+images {
+  image: "/assets/Background/Tree(Resized).png"
+}
+images {
+  image: "/assets/Background/Cloud(Redone).png"
+}
+images {
+  image: "/assets/Background/Tree Line Background.jpg"
+}
+images {
+  image: "/assets/Background/Bush 1.jpg"
+}
+images {
+  image: "/assets/Background/Bush 2.jpg"
+}
+margin: 0
+extrude_borders: 1
+inner_padding: 0
