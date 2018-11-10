@@ -5,7 +5,7 @@ fonts {
 }
 textures {
   name: "bricks"
-  texture: "/assets/images/bricks.atlas"
+  texture: "/assets/images/start.atlas"
 }
 background_color {
   x: 0.0
@@ -46,7 +46,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "bricks/SP2018 Logo"
+  texture: "bricks/Logo"
   id: "logo"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE

@@ -1,8 +1,8 @@
 images {
-  image: "/assets/images/background.png"
+  image: "/assets/images/Home Images/background.png"
 }
 images {
-  image: "/assets/images/logo.png"
+  image: "/assets/images/Home Images/logo.png"
 }
 images {
   image: "/builtins/graphics/particle_blob.png"
