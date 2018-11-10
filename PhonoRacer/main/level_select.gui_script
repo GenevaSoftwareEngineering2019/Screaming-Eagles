@@ -1,0 +1,33 @@
+function init(self)
+	msg.post(".", "acquire input focus)
+	msg.post("#", "hide_level_select")
+	self.active = false
+end
+
+function on messsage(self, message id, message sender)
+	if message id == hash("show_level_select") then
+		msg.post("#", "enable")
+		self.active = true
+	elseif message id == hash("hide_level_select") then
+		msg.post("#", "disable")
+		self.active = false
+	end
+end
+
+function on input(self, action id, action)
+	if action id == hash("click") and action.pressed and self.active then
+		for n = 1,4 do
+			local node = gui.get node("level " .. n)
+			if gui.pick node(node, action.x, action.y) then
+				msg.psot("/loader#loader", "load level", {level = n})
+				msg.post("#", "hide_level_select")
+			end
+		end
+
+		local back = gui.get node("back")
+		if gui.pick node(back, action.x, action.y) then
+			msg.post("#level select", "hide level_select")
+			msg.post("#start", "show_start")
+		end
+	end
+end
