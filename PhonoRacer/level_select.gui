@@ -15,8 +15,8 @@ background_color {
 }
 nodes {
   position {
-    x: 622.0
-    y: 428.0
+    x: 640.0
+    y: 475.0
     z: 0.0
     w: 1.0
   }
@@ -34,7 +34,7 @@ nodes {
   }
   size {
     x: 700.0
-    y: 140.0
+    y: 150.0
     z: 0.0
     w: 1.0
   }
@@ -46,7 +46,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "Level_Select/LevelSelectLabel"
   id: "select_level"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -69,8 +69,8 @@ nodes {
 }
 nodes {
   position {
-    x: 216.0
-    y: 201.0
+    x: 240.0
+    y: 200.0
     z: 0.0
     w: 1.0
   }
@@ -88,7 +88,7 @@ nodes {
   }
   size {
     x: 200.0
-    y: 130.0
+    y: 200.0
     z: 0.0
     w: 1.0
   }
@@ -100,7 +100,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "Level_Select/Number1"
   id: "level_1"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -123,8 +123,8 @@ nodes {
 }
 nodes {
   position {
-    x: 616.0
-    y: 201.0
+    x: 640.0
+    y: 200.0
     z: 0.0
     w: 1.0
   }
@@ -142,7 +142,7 @@ nodes {
   }
   size {
     x: 200.0
-    y: 130.0
+    y: 200.0
     z: 0.0
     w: 1.0
   }
@@ -154,7 +154,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "Level_Select/Number2"
   id: "level_2"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -177,8 +177,8 @@ nodes {
 }
 nodes {
   position {
-    x: 1016.0
-    y: 201.0
+    x: 1040.0
+    y: 200.0
     z: 0.0
     w: 1.0
   }
@@ -196,7 +196,7 @@ nodes {
   }
   size {
     x: 200.0
-    y: 130.0
+    y: 200.0
     z: 0.0
     w: 1.0
   }
@@ -208,7 +208,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "Level_Select/Number3"
   id: "level_3"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -231,8 +231,8 @@ nodes {
 }
 nodes {
   position {
-    x: 145.0
-    y: 639.0
+    x: 95.0
+    y: 625.0
     z: 0.0
     w: 1.0
   }
@@ -249,8 +249,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 200.0
-    y: 100.0
+    x: 150.0
+    y: 150.0
     z: 0.0
     w: 1.0
   }
@@ -262,7 +262,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "Level_Select/BackArrow"
   id: "back"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -281,7 +281,7 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

@@ -1,3 +1,18 @@
+images {
+  image: "/assets/images/Level_Select Images/BackArrow.png"
+}
+images {
+  image: "/assets/images/Level_Select Images/LevelSelectLabel.png"
+}
+images {
+  image: "/assets/images/Level_Select Images/Number1.png"
+}
+images {
+  image: "/assets/images/Level_Select Images/Number2.png"
+}
+images {
+  image: "/assets/images/Level_Select Images/Number3.png"
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 0
