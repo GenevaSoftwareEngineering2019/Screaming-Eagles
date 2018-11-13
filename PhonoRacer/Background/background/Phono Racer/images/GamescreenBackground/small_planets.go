@@ -16,7 +16,7 @@ components {
 embedded_components {
   id: "sprite2"
   type: "sprite"
-  data: "tile_set: \"/background/background.atlas\"\n"
+  data: "tile_set: \"/Background/background/Phono Racer/images/GamescreenBackground/background.atlas\"\n"
   "default_animation: \"Bush 2\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
@@ -36,7 +36,7 @@ embedded_components {
 embedded_components {
   id: "sprite3"
   type: "sprite"
-  data: "tile_set: \"/background/background.atlas\"\n"
+  data: "tile_set: \"/Background/background/Phono Racer/images/GamescreenBackground/background.atlas\"\n"
   "default_animation: \"Bush 1\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"

@@ -1,6 +1,6 @@
 components {
   id: "gui"
-  component: "/main/main.gui"
+  component: "/Background/GameScreen/main.gui"
   position {
     x: 0.0
     y: 0.0
