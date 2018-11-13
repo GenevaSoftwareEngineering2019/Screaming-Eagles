@@ -1,10 +1,11 @@
 function init(self)
 	msg.post("#", "show_start")
+	msg.post("#music", "play_sound")
 	self.active = false
 end
 
-function on message(self, message id, message, sender)
-	if message id == hash("show_start") then
+--[[function on message(self, message id, message, sender) 
+	if message id == hash("show_start") then 
 		msg.post("#", "enable")
 		self.active = true
 		elself message id == hash("hide_start") then
@@ -21,6 +22,6 @@ function on message(self, message id, message, sender)
 				msg.post("#level_select", "show_level_select")
 			end
 		end
-	end
+	end 
 	
-		
+		]]--
