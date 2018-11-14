@@ -1,4 +1,4 @@
---[[function init(self)
+function init(self)
 	msg.post("#", "show_start")
 	msg.post("#music", "play_sound")
 	self.active = false
@@ -19,7 +19,7 @@ function on_message(self, message_id, message, sender)
 			local start = gui.get_node("play")
 			if gui.pick_node(start, action.x, action.y) then
 				msg.post("#", "hide_start")
-				msg.post("#level_select", "show_level_select")
+				msg.post("#level_select", "#show_level_select")
 			end
 		end
 	end 
