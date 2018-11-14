@@ -1,6 +1,6 @@
 components {
   id: "script"
-  component: "/background/small_planets.script"
+  component: "/Background/background/Phono Racer/images/GamescreenBackground/small_planets.script"
   position {
     x: 0.0
     y: 0.0
