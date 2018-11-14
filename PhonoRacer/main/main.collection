@@ -1,4 +1,5 @@
 name: "main"
+<<<<<<< HEAD
 instances {
   id: "Car1"
   prototype: "/car/Car1.go"
@@ -39,6 +40,8 @@ instances {
     z: 1.0
   }
 }
+=======
+>>>>>>> development
 collection_instances {
   id: "Gui"
   collection: "/main/Gui.collection"
