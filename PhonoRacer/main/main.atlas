@@ -2,9 +2,6 @@ images {
   image: "/assets/images/Home Images/background.png"
 }
 images {
-  image: "/assets/images/Home Images/logo.png"
-}
-images {
   image: "/builtins/graphics/particle_blob.png"
 }
 margin: 0
