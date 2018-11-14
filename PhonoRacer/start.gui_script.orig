@@ -14,6 +14,7 @@ function on_message(self, message_id, message, sender)
 		end
 	end
 
+<<<<<<< HEAD
 	function on_input(self, action_id, action)
 		if action_id == hash("click") and action.pressed and self.active then
 			local start = gui.get_node("play")
@@ -24,3 +25,16 @@ function on_message(self, message_id, message, sender)
 		end
 	end 
 	
+=======
+function on input(self, action id, action)
+		if action id == hash("touch") and action.pressed and self.active then
+			local start = gui.get node("start")
+			if gui.pick node(start, action.x, action.y) then
+				msg.post("#", "hide start")
+				msg.post("#level_select", "show_level_select")
+			end
+		end
+	end--]]
+	
+		
+>>>>>>> Development

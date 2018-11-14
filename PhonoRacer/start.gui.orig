@@ -4,8 +4,13 @@ fonts {
   font: "/builtins/fonts/system_font.font"
 }
 textures {
+<<<<<<< HEAD
   name: "start"
   texture: "/assets/images/start.atlas"
+=======
+  name: "bricks"
+  texture: "/Background/background/Phono Racer/images/bricks.atlas"
+>>>>>>> Development
 }
 background_color {
   x: 0.0
