@@ -1,4 +1,4 @@
---[[function init(self)
+function init(self)
 	msg.post("#", "show_start")
 	msg.post("#music", "play_sound")
 	self.active = false
