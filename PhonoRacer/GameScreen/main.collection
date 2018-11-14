@@ -99,6 +99,26 @@ instances {
     z: 0.3
   }
 }
+instances {
+  id: "Car1"
+  prototype: "/car/Car1.go"
+  position {
+    x: 392.0
+    y: 133.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 2.0
+    y: 2.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "background"
