@@ -1,0 +1,40 @@
+--[[function init(self)
+	msg.post("#", "show_start")
+	msg.post("#music", "play_sound")
+	self.active = false
+end
+
+function on_message(self, message_id, message, sender) 
+	if message_id == hash("show_start") then 
+		msg.post("#", "enable")
+		self.active = true
+		elseif message_id == hash("hide_start") then
+			msg.post("#", "disable")
+			self.active = false
+		end
+	end
+
+<<<<<<< HEAD
+	function on_input(self, action_id, action)
+		if action_id == hash("click") and action.pressed and self.active then
+			local start = gui.get_node("play")
+			if gui.pick_node(start, action.x, action.y) then
+				msg.post("#", "hide_start")
+				msg.post("#level_select", "show_level_select")
+			end
+		end
+	end 
+	
+=======
+function on input(self, action id, action)
+		if action id == hash("touch") and action.pressed and self.active then
+			local start = gui.get node("start")
+			if gui.pick node(start, action.x, action.y) then
+				msg.post("#", "hide start")
+				msg.post("#level_select", "show_level_select")
+			end
+		end
+	end--]]
+	
+		
+>>>>>>> Development
