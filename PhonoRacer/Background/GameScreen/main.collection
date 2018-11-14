@@ -1,6 +1,6 @@
 name: "parallax"
 instances {
-  id: "large objects 1"
+  id: "large_planets1"
   prototype: "/Background/background/Phono Racer/images/GamescreenBackground/large_planets.go"
   position {
     x: -31.0
@@ -20,7 +20,7 @@ instances {
   }
 }
 instances {
-  id: "large objects 2"
+  id: "large_planets2"
   prototype: "/Background/background/Phono Racer/images/GamescreenBackground/large_planets.go"
   position {
     x: 1157.0
@@ -60,7 +60,7 @@ instances {
   }
 }
 instances {
-  id: "small objects 1"
+  id: "small_planets1"
   prototype: "/Background/background/Phono Racer/images/GamescreenBackground/small_planets.go"
   position {
     x: 763.184
@@ -80,7 +80,7 @@ instances {
   }
 }
 instances {
-  id: "small objects 2"
+  id: "small_planets2"
   prototype: "/Background/background/Phono Racer/images/GamescreenBackground/small_planets.go"
   position {
     x: 1621.288
@@ -105,7 +105,7 @@ embedded_instances {
   data: "embedded_components {\n"
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/Background/background/Phono Racer/images/GamescreenBackground/background.atlas\\\"\\n"
+  "  data: \"tile_set: \\\"/background/background.atlas\\\"\\n"
   "default_animation: \\\"Tree Line Background\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
