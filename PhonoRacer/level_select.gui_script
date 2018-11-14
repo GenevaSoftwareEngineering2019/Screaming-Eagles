@@ -9,7 +9,7 @@ function on_messsage(self, message_id, message, sender)
 	if message_id == hash("show_level_select") then
 		msg.post("#", "enable")
 		self.active = true
-	elseif message id == hash("hide_level_select") then
+	elseif message_id == hash("hide_level_select") then
 		msg.post("#", "disable")
 		self.active = false
 	end
