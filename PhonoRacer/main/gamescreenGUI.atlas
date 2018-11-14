@@ -1,0 +1,12 @@
+images {
+  image: "/assets/images/exitButton001.png"
+}
+images {
+  image: "/assets/images/helpButton001.png"
+}
+images {
+  image: "/assets/images/playButton001.png"
+}
+margin: 0
+extrude_borders: 0
+inner_padding: 0
