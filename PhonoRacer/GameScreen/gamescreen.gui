@@ -12,7 +12,7 @@ background_color {
 nodes {
   position {
     x: 260.0
-    y: 128.0
+    y: 86.0
     z: 0.0
     w: 1.0
   }
@@ -24,7 +24,7 @@ nodes {
   }
   scale {
     x: 1.0
-    y: 0.7
+    y: 0.476
     z: 1.0
     w: 1.0
   }
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 821.0
-    y: 128.0
+    x: 820.0
+    y: 86.0
     z: 0.0
     w: 1.0
   }
@@ -78,7 +78,7 @@ nodes {
   }
   scale {
     x: 1.0
-    y: 0.7
+    y: 0.476
     z: 1.0
     w: 1.0
   }
@@ -120,7 +120,7 @@ nodes {
 nodes {
   position {
     x: 1199.0
-    y: 128.0
+    y: 86.0
     z: 0.0
     w: 1.0
   }
@@ -132,7 +132,7 @@ nodes {
   }
   scale {
     x: 1.0
-    y: 0.7
+    y: 0.474
     z: 1.0
     w: 1.0
   }

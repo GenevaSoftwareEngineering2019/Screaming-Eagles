@@ -3,8 +3,8 @@ instances {
   id: "large objects 1"
   prototype: "/Background/background/Phono Racer/images/GamescreenBackground/Large Objects.go"
   position {
-    x: -31.0
-    y: 60.0
+    x: -34.0
+    y: 37.0
     z: 0.2
   }
   rotation {
@@ -24,7 +24,7 @@ instances {
   prototype: "/Background/background/Phono Racer/images/GamescreenBackground/Large Objects.go"
   position {
     x: 1149.0
-    y: 58.0
+    y: 30.0
     z: 0.2
   }
   rotation {
@@ -54,9 +54,9 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
+    x: 0.5
+    y: 0.5
+    z: 0.5
   }
 }
 instances {
@@ -64,7 +64,7 @@ instances {
   prototype: "/Background/background/Phono Racer/images/GamescreenBackground/Fast Objects.go"
   position {
     x: 763.184
-    y: 110.594
+    y: 107.594
     z: 1.0
   }
   rotation {
@@ -119,6 +119,26 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "GameScreen Gui"
+  prototype: "/GameScreen/GameScreen Gui.go"
+  position {
+    x: 6.0
+    y: 1.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.062
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "background"
@@ -145,7 +165,7 @@ embedded_instances {
   ""
   position {
     x: 640.0
-    y: 487.0
+    y: 467.0
     z: 0.0
   }
   rotation {
