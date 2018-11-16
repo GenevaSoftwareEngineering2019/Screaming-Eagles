@@ -139,6 +139,26 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "Top Phono"
+  prototype: "/Phonograms/Top Phono.go"
+  position {
+    x: 1417.0
+    y: 386.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.1
+    y: 0.1
+    z: 0.1
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "background"
