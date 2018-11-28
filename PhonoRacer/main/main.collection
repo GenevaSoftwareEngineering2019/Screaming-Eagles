@@ -23,8 +23,13 @@ scale_along_z: 0
 embedded_instances {
   id: "guis"
   data: "components {\n"
+<<<<<<< HEAD
+  "  id: \"level_select\"\n"
+  "  component: \"/level_select.gui\"\n"
+=======
   "  id: \"start\"\n"
   "  component: \"/start.gui\"\n"
+>>>>>>> e502abaeb90f676dc21b4009f0e8a752368bd9ae
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -52,6 +57,8 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "}\n"
+<<<<<<< HEAD
+=======
   "components {\n"
   "  id: \"achievements\"\n"
   "  component: \"/achievements.gui\"\n"
@@ -67,6 +74,7 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "}\n"
+>>>>>>> e502abaeb90f676dc21b4009f0e8a752368bd9ae
   "embedded_components {\n"
   "  id: \"music\"\n"
   "  type: \"sound\"\n"
@@ -100,8 +108,8 @@ embedded_instances {
     w: 0.99979997
   }
   scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
+    x: 1.238
+    y: 1.12
+    z: 1.34
   }
 }
