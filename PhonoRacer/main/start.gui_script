@@ -20,7 +20,32 @@ function on_message(self, message_id, message, sender)
 			if gui.pick_node(start, action.x, action.y) then
 				msg.post("#", "hide_start")
 				msg.post("#level_select", "show_level_select")
+<<<<<<< HEAD
+=======
+			elseif gui.pick_node(start, action.x, action.y) then
+				msg.post("#", "hide_start")
+				msg.post("#achievements", "show_achievements")
+>>>>>>> e502abaeb90f676dc21b4009f0e8a752368bd9ae
 			end
 		end
 	end 
+
+	--[[function on_input(self, action_id, action)
+		if action_id == hash("click") and action.pressed and self.active then
+			local start = gui.get_node("achievements")
+			if gui.pick_node(start, action.x, action.y) then
+				msg.post("#", "hide_start")
+				msg.post("#achievements", "show_achievements")
+			end
+		end
+	end  ]]--
+	
+	--[[else gui.pick_node(achievements, action.x, action.y) then
+	msg.post("#", "hide_start")
+	msg.post("#achievements", "show_achievements") --]]
+
+	
+
+
+			
 	
