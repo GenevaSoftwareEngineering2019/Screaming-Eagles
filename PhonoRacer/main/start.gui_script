@@ -20,9 +20,12 @@ function on_message(self, message_id, message, sender)
 			if gui.pick_node(start, action.x, action.y) then
 				msg.post("#", "hide_start")
 				msg.post("#level_select", "show_level_select")
+<<<<<<< HEAD
+=======
 			elseif gui.pick_node(start, action.x, action.y) then
 				msg.post("#", "hide_start")
 				msg.post("#achievements", "show_achievements")
+>>>>>>> e502abaeb90f676dc21b4009f0e8a752368bd9ae
 			end
 		end
 	end 
