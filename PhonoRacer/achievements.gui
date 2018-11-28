@@ -1,4 +1,8 @@
 script: "/main/achievements.gui_script"
+fonts {
+  name: "system_font"
+  font: "/builtins/fonts/system_font.font"
+}
 textures {
   name: "achievements"
   texture: "/assets/images/achievements.atlas"
@@ -11,15 +15,25 @@ background_color {
 }
 nodes {
   position {
-    x: 663.0
-    y: 401.0
+    x: 662.0
+    y: 374.0
     z: 0.0
     w: 1.0
   }
   rotation {
+<<<<<<< HEAD
     x: 3.106047E-17
+=======
+<<<<<<< HEAD
+    x: 0.0
+    y: 0.0
+    z: 0.0
+=======
+    x: 2.4848375E-17
+>>>>>>> 748fbaee7caa44b72da901081c777fe1cb0bdd18
     y: 19.600517
     z: 0.27740687
+>>>>>>> 31f902b1198a06488e8e516c4800bda0eda74e6d
     w: 1.0
   }
   scale {
@@ -29,8 +43,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 225.0
-    y: 225.0
+    x: 600.0
+    y: 600.0
     z: 0.0
     w: 1.0
   }
@@ -42,8 +56,8 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "achievements/Flags"
-  id: "flags"
+  texture: "achievements/Under_Construction"
+  id: "Construction Sign"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -61,7 +75,7 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

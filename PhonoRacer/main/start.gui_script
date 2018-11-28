@@ -16,10 +16,30 @@ function on_message(self, message_id, message, sender)
 
 	function on_input(self, action_id, action)
 		if action_id == hash("click") and action.pressed and self.active then
+<<<<<<< HEAD
 			local start = gui.get_node("start")
+=======
+<<<<<<< HEAD
+			local start = gui.get_node("start")
+			local achievements = gui.get_node("achievements")
+			--[[local exit = gui.get_node("achievement") (EXIT BUTTON HERE)  --]]    
 			if gui.pick_node(start, action.x, action.y) then
 				msg.post("#", "hide_start")
 				msg.post("#level_select", "show_level_select")
+			elseif gui.pick_node(achievements, action.x, action.y) then
+				msg.post("#", "hide_start")
+				msg.post("#achievements", "show_achievements")
+				--[[elseif gui.pick_node(exit, action.x, action.y) then   (EXIT BUTTON Location HERE)
+				msg.post("#", "hide_start")							(Exit application whole or exit to another screen?)
+				msg.post("#------", "------")  --]]
+		
+=======
+			local start = gui.get_node("play")
+>>>>>>> 748fbaee7caa44b72da901081c777fe1cb0bdd18
+			if gui.pick_node(start, action.x, action.y) then
+				msg.post("#", "hide_start")
+				msg.post("#level_select", "show_level_select")
+>>>>>>> 31f902b1198a06488e8e516c4800bda0eda74e6d
 			end
 		end
 	end 
