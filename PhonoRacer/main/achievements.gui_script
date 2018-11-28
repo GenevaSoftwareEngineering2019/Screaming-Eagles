@@ -1,7 +1,7 @@
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	msg.post("#", "hide_achievements")
-	msg.post("#music", "play sound")
+	msg.post("#music", "play_sound")
 	self.active = false
 end
 
