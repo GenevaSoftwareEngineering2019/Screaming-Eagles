@@ -5,7 +5,7 @@ function init(self)
 	self.active = false
 end
 
-function on_messsage(self, message_id, message, sender)
+function on_message(self, message_id, message, sender)
 	if message_id == hash("show_level_select") then
 		msg.post("#", "enable")
 		self.active = true
