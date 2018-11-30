@@ -1,6 +1,6 @@
 components {
   id: "Top Phono"
-  component: "/Phonograms/Top Phono.script"
+  component: "/Top Phono.script"
   position {
     x: 0.0
     y: 0.0

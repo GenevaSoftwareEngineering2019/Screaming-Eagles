@@ -141,7 +141,7 @@ instances {
 }
 instances {
   id: "Top Phono"
-  prototype: "/Phonograms/Top Phono.go"
+  prototype: "/Top Phono.go"
   position {
     x: 1417.0
     y: 386.0
