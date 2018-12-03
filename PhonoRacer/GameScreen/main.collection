@@ -140,8 +140,13 @@ instances {
   }
 }
 instances {
+<<<<<<< HEAD
   id: "Phonogram"
   prototype: "/Phonograms/Phonogram.go"
+=======
+  id: "Top Phono"
+  prototype: "/Top Phono.go"
+>>>>>>> 549b6a64918ebe048b077dd0e2d3cb9291f96795
   position {
     x: 1800.0
     y: 260.0
