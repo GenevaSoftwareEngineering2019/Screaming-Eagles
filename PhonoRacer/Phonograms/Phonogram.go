@@ -16,7 +16,7 @@ components {
 embedded_components {
   id: "factory"
   type: "factory"
-  data: "prototype: \"/Phonograms/Top Phono.go\"\n"
+  data: "prototype: \"/Top Phono.go\"\n"
   "load_dynamically: true\n"
   ""
   position {
