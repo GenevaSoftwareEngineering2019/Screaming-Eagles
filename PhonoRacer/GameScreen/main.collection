@@ -163,8 +163,8 @@ instances {
   id: "Selection"
   prototype: "/Phonograms/Selection.go"
   position {
-    x: 0.0
-    y: 0.0
+    x: -245.0
+    y: 333.0
     z: 0.0
   }
   rotation {
