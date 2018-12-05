@@ -165,7 +165,7 @@ instances {
   position {
     x: 837.0
     y: 150.0
-    z: 0.0
+    z: 0.2
   }
   rotation {
     x: 0.0
@@ -185,7 +185,7 @@ instances {
   position {
     x: 2591.0
     y: 150.0
-    z: 0.0
+    z: 0.2
   }
   rotation {
     x: 0.0
@@ -205,7 +205,7 @@ instances {
   position {
     x: 4406.0
     y: 150.0
-    z: 0.0
+    z: 0.2
   }
   rotation {
     x: 0.0
