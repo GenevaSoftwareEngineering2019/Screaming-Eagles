@@ -1,0 +1,112 @@
+local phonograms = {
+	{ phonogram = "0", sound = "a" },
+	{ phonogram = "1", sound = "ai" }
+	{ phonogram = "2", sound = "ar" }
+	{ phonogram = "3", sound = "au" }
+	{ phonogram = "4", sound = "aw" }
+	{ phonogram = "5", sound = "ay" }
+	{ phonogram = "6", sound = "b" }
+	{ phonogram = "7", sound = "c" }
+	{ phonogram = "8", sound = "ch" }
+	{ phonogram = "9", sound = "ci" }
+	{ phonogram = "10", sound = "ck" }
+	{ phonogram = "11", sound = "d" }
+	{ phonogram = "12", sound = "dge" }
+	{ phonogram = "13", sound = "e" }
+	{ phonogram = "14", sound = "ea" }
+	{ phonogram = "15", sound = "ear" }
+	{ phonogram = "16", sound = "ed" }
+	{ phonogram = "17", sound = "ee" }
+	{ phonogram = "18", sound = "ei" }
+	{ phonogram = "19", sound = "eigh" }
+	{ phonogram = "20", sound = "er" }
+	{ phonogram = "21", sound = "eu" }
+	{ phonogram = "22", sound = "ew" }
+	{ phonogram = "23", sound = "ey" }
+	{ phonogram = "24", sound = "f" }
+	{ phonogram = "25", sound = "g" }
+	{ phonogram = "26", sound = "gn" }
+	{ phonogram = "27", sound = "h" }
+	{ phonogram = "28", sound = "i" }
+	{ phonogram = "29", sound = "ie" }
+	{ phonogram = "30", sound = "igh" }
+	{ phonogram = "31", sound = "ir" }
+	{ phonogram = "32", sound = "j" }
+	{ phonogram = "33", sound = "k" }
+	{ phonogram = "34", sound = "kn" }
+	{ phonogram = "35", sound = "l" }
+	{ phonogram = "36", sound = "m" }
+	{ phonogram = "37", sound = "n" }
+	{ phonogram = "38", sound = "ng" }
+	{ phonogram = "39", sound = "o" }
+	{ phonogram = "40", sound = "oa" }
+	{ phonogram = "41", sound = "oe" }
+	{ phonogram = "42", sound = "oi" }
+	{ phonogram = "43", sound = "oo" }
+	{ phonogram = "44", sound = "or" }
+	{ phonogram = "45", sound = "ou" }
+	{ phonogram = "46", sound = "ough" }
+	{ phonogram = "47", sound = "ow" }
+	{ phonogram = "48", sound = "oy" }
+	{ phonogram = "49", sound = "p" }
+	{ phonogram = "50", sound = "ph" }
+	{ phonogram = "51", sound = "qu" }
+	{ phonogram = "52", sound = "r" }
+	{ phonogram = "53", sound = "s" }
+	{ phonogram = "54", sound = "sh" }
+	{ phonogram = "55", sound = "si" }
+	{ phonogram = "56", sound = "t" }
+	{ phonogram = "57", sound = "tch" }
+	{ phonogram = "58", sound = "th" }
+	{ phonogram = "59", sound = "ti" }
+	{ phonogram = "60", sound = "u" }
+	{ phonogram = "61", sound = "ui" }
+	{ phonogram = "62", sound = "ur" }
+	{ phonogram = "63", sound = "v" }
+	{ phonogram = "64", sound = "w" }
+	{ phonogram = "65", sound = "wh" }
+	{ phonogram = "66", sound = "wor" }
+	{ phonogram = "67", sound = "wr" }
+	{ phonogram = "68", sound = "x" }
+	{ phonogram = "69", sound = "y" }
+	{ phonogram = "70", sound = "z" }
+	
+			-- and more
+}
+
+local function create_gameobjects()
+	local id1 = factory.create("#factory")
+	local id2 = factory.create("#factory")
+	local phonogram1 = phonograms[math.random(1, #phonograms)]
+	local phonogram2 = phonograms[math.random(1, #phonograms)]
+	sound.play("animalsounds#" .. phonogram2.sound)
+end
+
+
+--local index1 = math.random(0, 70)
+--local index2 = math.random(0, 70)
+--local s = vmath.vector3(0.3, 0.3, 0.3)
+
+function init(self)
+	msg.post(".", "acquire_input_focus") 
+end
+
+function update(self, action_id, action)
+		local pos = go.get_position()
+		pos.x = pos.x - 100 
+		go.animate(phonogram1, "position.x", go.PLAYBACK_ONCE_FORWARD, 720, go.EASING_LINEAR, 3) 
+		if phonogram1.pos.x == 800
+		then	
+				sound.play("animalsounds#" .. phonogram1.sound)
+		end
+		local pos = go.get_position()
+		pos.x = pos.x - 100 
+		pos.y = pos.y +100
+		local Phonogram = factory.create("#factory", pos) 
+		go.animate(Phonogram, "position.x", go.PLAYBACK_ONCE_FORWARD, 720, go.EASING_LINEAR, 3) 
+		if phonogram2.pos.x == 800
+		then 
+			sound.play("animalsounds#" .. phonogram2.sound)
+		end
+	end
+
