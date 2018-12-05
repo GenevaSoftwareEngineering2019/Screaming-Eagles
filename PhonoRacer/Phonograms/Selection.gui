@@ -1,4 +1,4 @@
-script: ""
+script: "/Phonograms/Selection.gui_script"
 background_color {
   x: 0.0
   y: 0.0
@@ -7,8 +7,8 @@ background_color {
 }
 nodes {
   position {
-    x: 340.0
-    y: 401.0
+    x: 195.0
+    y: 593.0
     z: 0.0
     w: 1.0
   }
@@ -61,8 +61,8 @@ nodes {
 }
 nodes {
   position {
-    x: 819.0
-    y: 418.0
+    x: 557.0
+    y: 599.0
     z: 0.0
     w: 1.0
   }
