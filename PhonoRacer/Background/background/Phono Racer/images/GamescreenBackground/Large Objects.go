@@ -34,26 +34,6 @@ embedded_components {
   }
 }
 embedded_components {
-  id: "sprite1"
-  type: "sprite"
-  data: "tile_set: \"/Background/background/Phono Racer/images/GamescreenBackground/background.atlas\"\n"
-  "default_animation: \"Car 2\"\n"
-  "material: \"/builtins/materials/sprite.material\"\n"
-  "blend_mode: BLEND_MODE_ALPHA\n"
-  ""
-  position {
-    x: 879.521
-    y: 159.984
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-}
-embedded_components {
   id: "sprite2"
   type: "sprite"
   data: "tile_set: \"/Background/background/Phono Racer/images/GamescreenBackground/background.atlas\"\n"

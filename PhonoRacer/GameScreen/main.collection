@@ -140,11 +140,11 @@ instances {
   }
 }
 instances {
-  id: "Top Phono"
-  prototype: "/Phonograms/Top Phono.go"
+  id: "a"
+  prototype: "/Phonograms/Game Objects/a.go"
   position {
-    x: 1417.0
-    y: 386.0
+    x: 1234.0
+    y: 366.0
     z: 1.0
   }
   rotation {
@@ -154,9 +154,9 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 0.1
-    y: 0.1
-    z: 0.1
+    x: 1.0
+    y: 1.0
+    z: 1.0
   }
 }
 instances {
@@ -186,7 +186,7 @@ embedded_instances {
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/Background/background/Phono Racer/images/GamescreenBackground/background.atlas\\\"\\n"
-  "default_animation: \\\"Tree Line Background\\\"\\n"
+  "default_animation: \\\"background\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
