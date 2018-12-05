@@ -1,4 +1,4 @@
-name: "main"
+name: "default"
 collection_instances {
   id: "Gui"
   collection: "/main/Gui.collection"
@@ -21,23 +21,8 @@ collection_instances {
 }
 scale_along_z: 0
 embedded_instances {
-  id: "go"
+  id: "guis"
   data: "components {\n"
-  "  id: \"main\"\n"
-  "  component: \"/main/main.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "components {\n"
   "  id: \"start\"\n"
   "  component: \"/start.gui\"\n"
   "  position {\n"
@@ -67,11 +52,26 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "}\n"
+  "components {\n"
+  "  id: \"achievements\"\n"
+  "  component: \"/achievements.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
   "embedded_components {\n"
   "  id: \"music\"\n"
   "  type: \"sound\"\n"
   "  data: \"sound: \\\"/Audio/Undertale - Megalovania.ogg\\\"\\n"
-  "looping: 1\\n"
+  "looping: 0\\n"
   "group: \\\"master\\\"\\n"
   "gain: 1.0\\n"
   "\"\n"
@@ -89,8 +89,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 640.0
-    y: 360.0
+    x: -625.0
+    y: -347.0
     z: 0.0
   }
   rotation {

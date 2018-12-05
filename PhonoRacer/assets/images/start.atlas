@@ -2,9 +2,6 @@ images {
   image: "/assets/images/Home Images/Logo.png"
 }
 images {
-  image: "/assets/images/Home Images/RaceCar.png"
-}
-images {
   image: "/assets/images/Home Images/Flags.png"
 }
 images {
@@ -20,7 +17,10 @@ images {
   image: "/assets/images/Home Images/ExitButton.png"
 }
 images {
-  image: "/assets/images/Home Images/car1.jpg"
+  image: "/assets/images/Level_Select Images/background.jpg"
+}
+images {
+  image: "/assets/images/Home Images/TitleMenuCar.png"
 }
 margin: 0
 extrude_borders: 0
