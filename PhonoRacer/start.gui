@@ -231,8 +231,8 @@ nodes {
 }
 nodes {
   position {
-    x: 845.0
-    y: 249.0
+    x: 884.0
+    y: 260.0
     z: 0.0
     w: 1.0
   }
@@ -262,8 +262,8 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "start/car1"
-  id: "flags"
+  texture: "start/TitleMenuCar"
+  id: "TitleCar"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
