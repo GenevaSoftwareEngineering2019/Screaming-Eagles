@@ -46,12 +46,6 @@ animations {
 }
 animations {
   id: "Animation"
-  images {
-    image: "/assets/images/car 1.png"
-  }
-  images {
-    image: "/assets/images/car 2.png"
-  }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 8
   flip_horizontal: 0

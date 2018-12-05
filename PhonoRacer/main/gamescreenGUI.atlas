@@ -1,11 +1,14 @@
 images {
-  image: "/assets/images/exitButton001.png"
+  image: "/assets/images/GameScreenMenuBox.png"
 }
 images {
-  image: "/assets/images/helpButton001.png"
+  image: "/assets/images/MenuButtonGS.png"
 }
 images {
-  image: "/assets/images/playButton001.png"
+  image: "/assets/images/SoundButton.png"
+}
+images {
+  image: "/assets/images/HelpButtonGS.png"
 }
 margin: 0
 extrude_borders: 0
