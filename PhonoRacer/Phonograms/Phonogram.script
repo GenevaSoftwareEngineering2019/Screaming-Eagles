@@ -79,7 +79,7 @@ local function create_gameobjects()
 	local id2 = factory.create("#factory")
 	local phonogram1 = phonograms[math.random(1, #phonograms)]
 	local phonogram2 = phonograms[math.random(1, #phonograms)]
-	sound.play("animalsounds#" .. phonogram2.sound)
+	sound.play(phonogram2.sound)
 end
 
 
