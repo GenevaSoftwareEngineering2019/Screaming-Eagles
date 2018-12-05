@@ -5,17 +5,9 @@ images {
   image: "/Background/background/Phono Racer/images/GamescreenBackground/Cloud(Redone).png"
 }
 images {
-  image: "/Background/background/Phono Racer/images/GamescreenBackground/Tree Line Background.jpg"
 }
 images {
-  image: "/Background/background/Phono Racer/images/GamescreenBackground/Bush 1.jpg"
-}
-images {
-  image: "/Background/background/Phono Racer/images/GamescreenBackground/Bush 2.jpg"
-}
-images {
-  image: "/Background/background/Phono Racer/images/GamescreenBackground/Car 2.png"
-}
+  image: "/Background/background/Phono Racer/images/GamescreenBackground/background.jpg"
 margin: 0
 extrude_borders: 1
 inner_padding: 0

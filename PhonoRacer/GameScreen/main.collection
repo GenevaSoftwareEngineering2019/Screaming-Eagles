@@ -166,7 +166,7 @@ embedded_instances {
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/Background/background/Phono Racer/images/GamescreenBackground/background.atlas\\\"\\n"
-  "default_animation: \\\"Tree Line Background\\\"\\n"
+  "default_animation: \\\"background\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
