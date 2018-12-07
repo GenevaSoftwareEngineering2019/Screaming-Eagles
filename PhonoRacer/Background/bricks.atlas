@@ -1,0 +1,21 @@
+images {
+  image: "/Background/background/Phono Racer/images/SP2018 Logo.png"
+}
+images {
+  image: "/assets/images/background_images/RaceCar.png"
+}
+images {
+  image: "/assets/images/background_images/Flags.png"
+}
+images {
+  image: "/assets/images/background_images/Play Button.png"
+}
+images {
+  image: "/assets/images/background_images/Achieve Button.png"
+}
+images {
+  image: "/assets/images/background_images/Exit Button.png"
+}
+margin: 0
+extrude_borders: 0
+inner_padding: 0

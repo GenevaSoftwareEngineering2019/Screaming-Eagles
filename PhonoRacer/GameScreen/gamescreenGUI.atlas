@@ -1,14 +1,14 @@
 images {
-  image: "/assets/images/GameScreenMenuBox.png"
+  image: "/assets/images/background_images/GameScreenMenuBox.png"
 }
 images {
-  image: "/assets/images/MenuButtonGS.png"
+  image: "/assets/images/background_images/MenuButtonGS.png"
 }
 images {
-  image: "/assets/images/SoundButton.png"
+  image: "/assets/images/background_images/SoundButton.png"
 }
 images {
-  image: "/assets/images/HelpButtonGS.png"
+  image: "/assets/images/background_images/HelpButtonGS.png"
 }
 margin: 0
 extrude_borders: 0

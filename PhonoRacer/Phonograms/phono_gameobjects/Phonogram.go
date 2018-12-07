@@ -1,0 +1,33 @@
+components {
+  id: "Phonogram"
+  component: "/Phonograms/phono_scripts/Phonogram.script"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
+embedded_components {
+  id: "factory"
+  type: "factory"
+  data: "prototype: \"/Top Phono.go\"\n"
+  "load_dynamically: true\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}

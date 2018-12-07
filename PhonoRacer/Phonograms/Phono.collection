@@ -1,7 +1,7 @@
 name: "default"
 instances {
   id: "a"
-  prototype: "/Phonograms/Game Objects/a.go"
+  prototype: "/Phonograms/letter_gameobjects/a.go"
   position {
     x: 0.0
     y: 0.0
@@ -21,7 +21,7 @@ instances {
 }
 instances {
   id: "ai"
-  prototype: "/Phonograms/Game Objects/ai.go"
+  prototype: "/Phonograms/letter_gameobjects/ai.go"
   position {
     x: 0.0
     y: 0.0
@@ -41,7 +41,7 @@ instances {
 }
 instances {
   id: "ar"
-  prototype: "/Phonograms/Game Objects/ar.go"
+  prototype: "/Phonograms/letter_gameobjects/ar.go"
   position {
     x: 0.0
     y: 0.0
@@ -61,7 +61,7 @@ instances {
 }
 instances {
   id: "au"
-  prototype: "/Phonograms/Game Objects/au.go"
+  prototype: "/Phonograms/letter_gameobjects/au.go"
   position {
     x: 0.0
     y: 0.0
@@ -81,7 +81,7 @@ instances {
 }
 instances {
   id: "aw"
-  prototype: "/Phonograms/Game Objects/aw.go"
+  prototype: "/Phonograms/letter_gameobjects/aw.go"
   position {
     x: 0.0
     y: 0.0
@@ -101,7 +101,7 @@ instances {
 }
 instances {
   id: "ay"
-  prototype: "/Phonograms/Game Objects/ay.go"
+  prototype: "/Phonograms/letter_gameobjects/ay.go"
   position {
     x: 0.0
     y: 0.0
@@ -121,7 +121,7 @@ instances {
 }
 instances {
   id: "b"
-  prototype: "/Phonograms/Game Objects/b.go"
+  prototype: "/Phonograms/letter_gameobjects/b.go"
   position {
     x: 0.0
     y: 0.0
@@ -141,7 +141,7 @@ instances {
 }
 instances {
   id: "c"
-  prototype: "/Phonograms/Game Objects/c.go"
+  prototype: "/Phonograms/letter_gameobjects/c.go"
   position {
     x: 0.0
     y: 0.0
@@ -161,7 +161,7 @@ instances {
 }
 instances {
   id: "ch"
-  prototype: "/Phonograms/Game Objects/ch.go"
+  prototype: "/Phonograms/letter_gameobjects/ch.go"
   position {
     x: 0.0
     y: 0.0
@@ -181,7 +181,7 @@ instances {
 }
 instances {
   id: "ci"
-  prototype: "/Phonograms/Game Objects/ci.go"
+  prototype: "/Phonograms/letter_gameobjects/ci.go"
   position {
     x: 0.0
     y: 0.0
@@ -201,7 +201,7 @@ instances {
 }
 instances {
   id: "ck"
-  prototype: "/Phonograms/Game Objects/ck.go"
+  prototype: "/Phonograms/letter_gameobjects/ck.go"
   position {
     x: 0.0
     y: 0.0
@@ -221,7 +221,7 @@ instances {
 }
 instances {
   id: "d"
-  prototype: "/Phonograms/Game Objects/d.go"
+  prototype: "/Phonograms/letter_gameobjects/d.go"
   position {
     x: 0.0
     y: 0.0
@@ -241,7 +241,7 @@ instances {
 }
 instances {
   id: "dge"
-  prototype: "/Phonograms/Game Objects/dge.go"
+  prototype: "/Phonograms/letter_gameobjects/dge.go"
   position {
     x: 0.0
     y: 0.0
@@ -261,7 +261,7 @@ instances {
 }
 instances {
   id: "e"
-  prototype: "/Phonograms/Game Objects/e.go"
+  prototype: "/Phonograms/letter_gameobjects/e.go"
   position {
     x: 0.0
     y: 0.0
@@ -281,7 +281,7 @@ instances {
 }
 instances {
   id: "ea"
-  prototype: "/Phonograms/Game Objects/ea.go"
+  prototype: "/Phonograms/letter_gameobjects/ea.go"
   position {
     x: 0.0
     y: 0.0
@@ -301,7 +301,7 @@ instances {
 }
 instances {
   id: "ear"
-  prototype: "/Phonograms/Game Objects/ear.go"
+  prototype: "/Phonograms/letter_gameobjects/ear.go"
   position {
     x: 0.0
     y: 0.0

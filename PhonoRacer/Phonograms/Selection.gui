@@ -1,4 +1,4 @@
-script: "/Phonograms/Selection.gui_script"
+script: "/Phonograms/phono_scripts/Selection.gui_script"
 background_color {
   x: 0.0
   y: 0.0
