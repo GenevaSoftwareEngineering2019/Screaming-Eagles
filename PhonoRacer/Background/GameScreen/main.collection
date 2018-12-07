@@ -1,0 +1,142 @@
+name: "parallax"
+instances {
+  id: "large_planets1"
+  prototype: "/Background/background/Phono Racer/images/GamescreenBackground/large_planets.go"
+  position {
+    x: -31.0
+    y: -76.0
+    z: 0.2
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.873
+    y: 0.873
+    z: 0.873
+  }
+}
+instances {
+  id: "large_planets2"
+  prototype: "/Background/background/Phono Racer/images/GamescreenBackground/large_planets.go"
+  position {
+    x: 1157.0
+    y: -89.0
+    z: 0.2
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.873
+    y: 0.873
+    z: 0.873
+  }
+}
+instances {
+  id: "main"
+  prototype: "/Background/GameScreen/main.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "small_planets1"
+  prototype: "/Background/background/Phono Racer/images/GamescreenBackground/small_planets.go"
+  position {
+    x: 763.184
+    y: 17.594
+    z: 0.7
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.3
+    y: 0.3
+    z: 0.3
+  }
+}
+instances {
+  id: "small_planets2"
+  prototype: "/Background/background/Phono Racer/images/GamescreenBackground/small_planets.go"
+  position {
+    x: 1621.288
+    y: 23.731
+    z: 0.7
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.3
+    y: 0.3
+    z: 0.3
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "background"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/background/background.atlas\\\"\\n"
+  "default_animation: \\\"Tree Line Background\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 640.0
+    y: 360.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}

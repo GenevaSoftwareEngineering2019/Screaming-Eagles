@@ -1,7 +1,18 @@
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
 script: ""
 textures {
   name: "gamescreenGUI"
   texture: "/GameScreen/gamescreenGUI.atlas"
+=======
+script: "/main/start.gui_script"
+fonts {
+  name: "system_font"
+  font: "/builtins/fonts/system_font.font"
+}
+textures {
+  name: "start"
+  texture: "/assets/images/start.atlas"
+>>>>>>> Development:PhonoRacer/start.gui
 }
 background_color {
   x: 0.0
@@ -12,7 +23,11 @@ background_color {
 nodes {
   position {
     x: 640.0
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
     y: 62.5
+=======
+    y: 570.0
+>>>>>>> Development:PhonoRacer/start.gui
     z: 0.0
     w: 1.0
   }
@@ -29,8 +44,13 @@ nodes {
     w: 1.0
   }
   size {
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
     x: 400.0
     y: 90.0
+=======
+    x: 950.0
+    y: 200.0
+>>>>>>> Development:PhonoRacer/start.gui
     z: 0.0
     w: 1.0
   }
@@ -42,13 +62,22 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
   texture: "gamescreenGUI/SoundButton"
   id: "SoundButton"
+=======
+  texture: "start/Logo"
+  id: "logo"
+>>>>>>> Development:PhonoRacer/start.gui
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
   adjust_mode: ADJUST_MODE_FIT
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
   layer: "Front"
+=======
+  layer: "front"
+>>>>>>> Development:PhonoRacer/start.gui
   inherit_alpha: true
   slice9 {
     x: 0.0
@@ -65,8 +94,13 @@ nodes {
 }
 nodes {
   position {
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
     x: 75.0
     y: 62.5
+=======
+    x: 349.0
+    y: 400.0
+>>>>>>> Development:PhonoRacer/start.gui
     z: 0.0
     w: 1.0
   }
@@ -83,8 +117,13 @@ nodes {
     w: 1.0
   }
   size {
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
     x: 90.0
     y: 90.0
+=======
+    x: 300.0
+    y: 100.0
+>>>>>>> Development:PhonoRacer/start.gui
     z: 0.0
     w: 1.0
   }
@@ -96,13 +135,22 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
   texture: "gamescreenGUI/MenuButtonGS"
   id: "MenuButton"
+=======
+  texture: "start/PlayButton"
+  id: "start"
+>>>>>>> Development:PhonoRacer/start.gui
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
   adjust_mode: ADJUST_MODE_FIT
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
   layer: "Front"
+=======
+  layer: "front"
+>>>>>>> Development:PhonoRacer/start.gui
   inherit_alpha: true
   slice9 {
     x: 0.0
@@ -119,8 +167,12 @@ nodes {
 }
 nodes {
   position {
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
     x: 200.0
     y: 62.5
+=======
+    x: 350.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -137,8 +189,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 90.0
-    y: 90.0
+    x: 300.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -150,13 +202,13 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "gamescreenGUI/HelpButtonGS"
-  id: "HelpButton"
+  texture: "start/ExitButton"
+  id: "exit"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
   adjust_mode: ADJUST_MODE_FIT
-  layer: "Front"
+  layer: "front"
   inherit_alpha: true
   slice9 {
     x: 0.0
@@ -171,10 +223,154 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
 }
+nodes {
+  position {
+    x: 350.0
+    y: 250.0
+>>>>>>> Development:PhonoRacer/start.gui
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
+    x: 90.0
+    y: 90.0
+=======
+    x: 300.0
+    y: 100.0
+>>>>>>> Development:PhonoRacer/start.gui
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
+  texture: "gamescreenGUI/HelpButtonGS"
+  id: "HelpButton"
+=======
+  texture: "start/AchieveButton"
+  id: "achievements"
+>>>>>>> Development:PhonoRacer/start.gui
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_CENTER
+  adjust_mode: ADJUST_MODE_FIT
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
+  layer: "Front"
+=======
+  layer: "front"
+>>>>>>> Development:PhonoRacer/start.gui
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: false
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
+    x: 640.0
+    y: 62.5
+=======
+    x: 884.0
+    y: 260.0
+>>>>>>> Development:PhonoRacer/start.gui
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
+    x: 1280.0
+    y: 125.0
+=======
+    x: 400.0
+    y: 400.0
+>>>>>>> Development:PhonoRacer/start.gui
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
+  texture: "gamescreenGUI/GameScreenMenuBox"
+  id: "GameScreenMenuBox"
+=======
+  texture: "start/TitleMenuCar"
+  id: "TitleCar"
+>>>>>>> Development:PhonoRacer/start.gui
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_CENTER
+  adjust_mode: ADJUST_MODE_FIT
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
+  layer: "background"
+=======
+  layer: "front"
+>>>>>>> Development:PhonoRacer/start.gui
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: false
+  size_mode: SIZE_MODE_MANUAL
+}
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
+=======
 nodes {
   position {
     x: 640.0
-    y: 62.5
+    y: 360.0
     z: 0.0
     w: 1.0
   }
@@ -192,7 +388,7 @@ nodes {
   }
   size {
     x: 1280.0
-    y: 125.0
+    y: 720.0
     z: 0.0
     w: 1.0
   }
@@ -204,8 +400,8 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "gamescreenGUI/GameScreenMenuBox"
-  id: "GameScreenMenuBox"
+  texture: "start/background"
+  id: "background"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -225,11 +421,16 @@ nodes {
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
 }
+>>>>>>> Development:PhonoRacer/start.gui
 layers {
   name: "background"
 }
 layers {
+<<<<<<< HEAD:PhonoRacer/GameScreen/gamescreen.gui
   name: "Front"
+=======
+  name: "front"
+>>>>>>> Development:PhonoRacer/start.gui
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
