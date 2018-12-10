@@ -1,9 +1,0 @@
-images {
-  image: "/assets/images/Achievement Images/Under_Construction.png"
-}
-images {
-  image: "/assets/images/Level_Select Images/BackArrow.png"
-}
-margin: 0
-extrude_borders: 0
-inner_padding: 0
