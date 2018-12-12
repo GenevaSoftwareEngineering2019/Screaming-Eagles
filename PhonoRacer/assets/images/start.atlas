@@ -8,9 +8,6 @@ images {
   image: "/assets/images/Home Images/PlayButton.png"
 }
 images {
-  image: "/assets/images/Home Images/AchieveButton.png"
-}
-images {
   image: "/builtins/graphics/particle_blob.png"
 }
 images {
@@ -21,6 +18,9 @@ images {
 }
 images {
   image: "/assets/images/Home Images/TitleMenuCar.png"
+}
+images {
+  image: "/assets/images/Home Images/AchieveButtonV2.png"
 }
 margin: 0
 extrude_borders: 0
