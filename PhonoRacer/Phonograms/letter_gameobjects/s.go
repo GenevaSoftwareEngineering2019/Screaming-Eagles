@@ -36,7 +36,7 @@ embedded_components {
   "pivot: PIVOT_CENTER\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   "line_break: false\n"
-  "text: \"S\"\n"
+  "text: \"s\"\n"
   "font: \"/assets/Fonts/Phonograms.font\"\n"
   "material: \"/builtins/fonts/label.material\"\n"
   ""
