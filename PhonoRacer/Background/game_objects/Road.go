@@ -22,8 +22,8 @@ embedded_components {
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
   position {
-    x: -148.0
-    y: -0.0
+    x: 293.0
+    y: 0.0
     z: 0.0
   }
   rotation {
@@ -42,14 +42,34 @@ embedded_components {
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
   position {
-    x: 108.0
-    y: -0.0
+    x: 126.0
+    y: 0.0
     z: 0.0
   }
   rotation {
     x: 0.0
     y: 0.0
-    z: 0.99999607
-    w: 0.0028048193
+    z: 0.0
+    w: 1.0
+  }
+}
+embedded_components {
+  id: "sprite2"
+  type: "sprite"
+  data: "tile_set: \"/Background/background.atlas\"\n"
+  "default_animation: \"Asphalt\"\n"
+  "material: \"/builtins/materials/sprite.material\"\n"
+  "blend_mode: BLEND_MODE_ALPHA\n"
+  ""
+  position {
+    x: 1.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
   }
 }
