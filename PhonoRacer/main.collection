@@ -143,8 +143,8 @@ instances {
   id: "Selection"
   prototype: "/Phonograms/phono_gameobjects/Selection.go"
   position {
-    x: -1944.0
-    y: 248.0
+    x: 12.0
+    y: 1.0
     z: 0.0
   }
   rotation {
@@ -217,6 +217,26 @@ instances {
     x: 3.66
     y: 0.536
     z: 0.654
+  }
+}
+instances {
+  id: "PhonoTrigger"
+  prototype: "/Background/game_objects/PhonoTrigger.go"
+  position {
+    x: 634.0
+    y: 357.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
   }
 }
 scale_along_z: 0
