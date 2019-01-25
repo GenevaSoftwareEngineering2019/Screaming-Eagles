@@ -1,7 +1,15 @@
 script: "/GameScreen/gamescreenGUI.gui_script"
+fonts {
+  name: "GeneralUse"
+  font: "/assets/Fonts/GeneralUse.font"
+}
 textures {
   name: "HelpScreenGui"
   texture: "/GameScreen/HelpScreenGui.atlas"
+}
+textures {
+  name: "Car1"
+  texture: "/GameScreen/car/Car1.atlas"
 }
 background_color {
   x: 0.0
@@ -42,7 +50,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "HelpScreenGui/Under_Construction"
   id: "box"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -61,7 +69,13 @@ nodes {
   clipping_inverted: false
   alpha: 1.0
   template_node_child: false
-  size_mode: SIZE_MODE_AUTO
+  size_mode: SIZE_MODE_MANUAL
+}
+layers {
+  name: "Background"
+}
+layers {
+  name: "Foreground"
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
