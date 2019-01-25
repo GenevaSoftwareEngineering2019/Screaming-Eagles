@@ -1,4 +1,4 @@
-script: ""
+script: "/Phonograms/letter_gameobjects/gamescreenGUI.gui_script"
 textures {
   name: "gamescreenGUI"
   texture: "/GameScreen/gamescreenGUI.atlas"

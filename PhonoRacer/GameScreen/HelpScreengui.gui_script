@@ -1,6 +1,6 @@
 function init(self)
 	msg.post("#", "hide_HelpScreen")
-	self.active = false
+	self.active = true
 end
 
 function final(self)

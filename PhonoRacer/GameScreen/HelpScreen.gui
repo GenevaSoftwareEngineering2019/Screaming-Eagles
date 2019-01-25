@@ -1,4 +1,4 @@
-script: "/GameScreen/gamescreenGUI.gui_script"
+script: "/GameScreen/HelpScreengui.gui_script"
 fonts {
   name: "GeneralUse"
   font: "/assets/Fonts/GeneralUse.font"
