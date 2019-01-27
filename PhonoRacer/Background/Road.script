@@ -1,0 +1,10 @@
+local speed = -160
+
+function update(self, dt)
+	local p = go.get_position()
+	p.x = p.x + speed * dt
+	if p.x <= -700 then
+		p.x = 1280
+	end
+	go.set_position(p)
+end

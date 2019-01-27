@@ -1,0 +1,13 @@
+local speed = -60
+
+function update(self, dt)
+	local p = go.get_position()
+	p.x = p.x + speed * dt
+	if p.x <= 800 then
+		local pausenode = gui.get_node("Selection")
+		if gui.pick_node(pausenode, action.x, action.y) then
+			msg.post("Selection", "show_Selection")
+		end
+	end
+	go.set_position(p)
+end
