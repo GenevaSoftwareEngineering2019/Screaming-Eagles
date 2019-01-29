@@ -4,6 +4,9 @@ images {
 images {
   image: "/assets/images/background_images/HelpButtonGS.png"
 }
+images {
+  image: "/assets/images/BackArrow.png"
+}
 animations {
   id: "New Animation"
   images {
