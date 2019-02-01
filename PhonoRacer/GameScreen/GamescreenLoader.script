@@ -1,0 +1,35 @@
+function init(self)
+	msg.post("#Gamescreenproxy1", "load")
+	msg.post(".", "acquire_input_focus")
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	print("update() with timestep (dt)" .. dt)
+end
+
+function on_message(self, message_id, message, sender)
+	--[[if message_id == hash("Freeze") then
+		msg.post(sender, "unload")
+			--msg.post("Gamescreenproxy1", "set_time_step", {factor = 0.0001, mode = 1})
+	end]]
+	
+	if message_id == hash("proxy_loaded") then
+		msg.post(sender, "init")
+		msg.post(sender, "enable")
+	end
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end
