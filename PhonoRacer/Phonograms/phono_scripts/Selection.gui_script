@@ -1,4 +1,5 @@
 function init(self)
+	msg.post(".", "acquire_input_focus")
 	msg.post("#", "hide_Selection")
 	self.active = false
 end
@@ -6,8 +7,8 @@ end
 function on_message(self, message_id, message, sender)
 	
 	if message_id == hash("show_Selection") then
-	msg.post("#", "enable")
-	self.active = true
+		msg.post("#", "enable")
+		self.active = true
 	elseif message_id == hash("hide_Selection") then
 		msg.post("#", "disable")
 		self.active = false

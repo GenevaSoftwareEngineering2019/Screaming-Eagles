@@ -140,6 +140,73 @@ instances {
   }
 }
 instances {
+  id: "Road"
+  prototype: "/Background/game_objects/Road.go"
+  position {
+    x: 837.0
+    y: 150.0
+    z: 0.2
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 4.065
+    y: 0.542
+    z: 0.654
+  }
+}
+instances {
+  id: "Road1"
+  prototype: "/Background/game_objects/Road.go"
+  position {
+    x: 2591.0
+    y: 150.0
+    z: 0.2
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 3.66
+    y: 0.536
+    z: 0.654
+  }
+}
+instances {
+  id: "Road2"
+  prototype: "/Background/game_objects/Road.go"
+  position {
+    x: 4406.0
+    y: 150.0
+    z: 0.2
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 3.66
+    y: 0.536
+    z: 0.654
+  }
+}
+instances {
+<<<<<<< HEAD
+  id: "Collision"
+  prototype: "/GameScreen/Collision.go"
+  position {
+    x: 877.0
+    y: 366.0
+=======
   id: "PhonoTrigger"
   prototype: "/Background/game_objects/PhonoTrigger.go"
   position {
@@ -160,51 +227,12 @@ instances {
   }
 }
 instances {
-  id: "Road"
-  prototype: "/Background/game_objects/Road.go"
+  id: "HelpScreen Gui"
+  prototype: "/GameScreen/HelpScreen Gui.go"
   position {
-    x: 494.0
-    y: 135.0
-    z: 0.2
-  }
-  rotation {
     x: 0.0
     y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 4.065
-    y: 0.542
-    z: 0.654
-  }
-}
-instances {
-  id: "Road1"
-  prototype: "/Background/game_objects/Road.go"
-  position {
-    x: 2777.0
-    y: 135.0
-    z: 0.1
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 4.065
-    y: 0.542
-    z: 0.654
-  }
-}
-instances {
-  id: "Collision"
-  prototype: "/GameScreen/Collision.go"
-  position {
-    x: 877.0
-    y: 366.0
+>>>>>>> ab05a9c221117ac6ec60e501bed22421ba7d64f5
     z: 0.0
   }
   rotation {
