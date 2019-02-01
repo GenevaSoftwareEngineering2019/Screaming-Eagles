@@ -120,26 +120,6 @@ instances {
   }
 }
 instances {
-  id: "a"
-  prototype: "/Phonograms/letter_gameobjects/a.go"
-  position {
-    x: 1172.0
-    y: 366.0
-    z: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.4
-    y: 0.4
-    z: 1.0
-  }
-}
-instances {
   id: "Selection"
   prototype: "/Phonograms/phono_gameobjects/Selection.go"
   position {
@@ -220,6 +200,13 @@ instances {
   }
 }
 instances {
+<<<<<<< HEAD
+  id: "Collision"
+  prototype: "/GameScreen/Collision.go"
+  position {
+    x: 877.0
+    y: 366.0
+=======
   id: "PhonoTrigger"
   prototype: "/Background/game_objects/PhonoTrigger.go"
   position {
@@ -245,6 +232,7 @@ instances {
   position {
     x: 0.0
     y: 0.0
+>>>>>>> ab05a9c221117ac6ec60e501bed22421ba7d64f5
     z: 0.0
   }
   rotation {

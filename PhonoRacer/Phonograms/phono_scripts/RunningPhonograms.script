@@ -8,15 +8,17 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then
-		if message.enter then
 			msg.post("Selection", "show_Selection")
+			msg.post("/Blank","Freeze")
 			msg.post("Selection", "Pause")
 			go.delete()
-		--[[local pausenode = gui.get_node("Selection")
-			if gui.pick_node(pausenode, action.x, action.y) then
-				msg.post("Selection", "show_Selection")
-			end]]
-		else
 		end
-		end
+
+	--[[if messgae_id == hash("FreezeGameScreen") then
+		msg.post("/GamescreenProxy#Gamescreenproxy1","Freeze")
+	end]]
+
+	--[[if messgae_id == hash("FreezeGameScreen") then
+		msg.post("Background", "set_time_step", {factor = 0.0001, mode = 0})
+	end]]
 end
