@@ -1,7 +1,7 @@
 name: "default"
 instances {
-  id: "Selection"
-  prototype: "/Phonograms/phono_gameobjects/Selection.go"
+  id: "Fast Objects"
+  prototype: "/Background/game_objects/Fast Objects.go"
   position {
     x: 0.0
     y: 0.0
