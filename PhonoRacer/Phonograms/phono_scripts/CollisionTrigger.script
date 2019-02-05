@@ -1,22 +1,24 @@
-local speed = -60
+local speed = -100
 
 function update(self, dt)
 	local p = go.get_position()
 	p.x = p.x + speed * dt
 	go.set_position(p)
+	if p.x <= -200 then
+		p.x = 2000
+		go.set_position(p)
+	end
 end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then
-		if message.enter then
-			msg.post("Selection", "show_Selection")
+		msg.post("Selection", "show_Selection")
 			--msg.post("Selection", "Pause")
-			go.delete()
+			--go.delete()
 		--[[local pausenode = gui.get_node("Selection")
 			if gui.pick_node(pausenode, action.x, action.y) then
 				msg.post("Selection", "show_Selection")
 			end]]
 		else
-		end
 		end
 end

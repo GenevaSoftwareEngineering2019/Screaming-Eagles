@@ -145,7 +145,7 @@ instances {
   position {
     x: 837.0
     y: 150.0
-    z: 0.2
+    z: 0.8
   }
   rotation {
     x: 0.0
@@ -240,11 +240,11 @@ instances {
   }
 }
 instances {
-  id: "Collision"
-  prototype: "/GameScreen/Collision.go"
+  id: "OtherCars"
+  prototype: "/GameScreen/OtherCars.go"
   position {
-    x: 1171.0
-    y: 190.0
+    x: 1134.0
+    y: 324.0
     z: 0.0
   }
   rotation {
@@ -254,8 +254,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 0.806
-    y: 0.683
+    x: 1.0
+    y: 1.0
     z: 1.0
   }
 }
