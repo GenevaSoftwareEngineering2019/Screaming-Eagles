@@ -10,7 +10,7 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then
 		if message.enter then
 			msg.post("Selection", "show_Selection")
-			msg.post("Selection", "Pause")
+			--msg.post("Selection", "Pause")
 			go.delete()
 		--[[local pausenode = gui.get_node("Selection")
 			if gui.pick_node(pausenode, action.x, action.y) then
