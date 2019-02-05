@@ -1,7 +1,4 @@
 images {
-  image: "/Background/background/Phono Racer/images/SP2018 Logo.png"
-}
-images {
   image: "/assets/images/background_images/RaceCar.png"
 }
 images {

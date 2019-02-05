@@ -1,6 +1,6 @@
 components {
   id: "Phono"
-  component: "/Phonograms/phono_scripts/RunningPhonograms.script"
+  component: "/Phonograms/phono_scripts/CollisionTrigger.script"
   position {
     x: 0.0
     y: 0.0

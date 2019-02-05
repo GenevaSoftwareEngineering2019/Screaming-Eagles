@@ -203,8 +203,8 @@ instances {
   id: "PhonoTrigger"
   prototype: "/Background/game_objects/PhonoTrigger.go"
   position {
-    x: 634.0
-    y: 357.0
+    x: 400.0
+    y: 176.0
     z: 0.0
   }
   rotation {
@@ -243,8 +243,8 @@ instances {
   id: "Collision"
   prototype: "/GameScreen/Collision.go"
   position {
-    x: 796.0
-    y: 361.0
+    x: 1171.0
+    y: 190.0
     z: 0.0
   }
   rotation {
