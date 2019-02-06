@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 script: "/Phonograms/letter_gameobjects/gamescreenGUI.gui_script"
+=======
+script: ""
+>>>>>>> Development
 textures {
   name: "gamescreenGUI"
   texture: "/GameScreen/gamescreenGUI.atlas"
@@ -11,6 +15,7 @@ background_color {
 }
 nodes {
   position {
+<<<<<<< HEAD
     x: 640.0
     y: 62.5
     z: 0.0
@@ -65,6 +70,8 @@ nodes {
 }
 nodes {
   position {
+=======
+>>>>>>> Development
     x: 75.0
     y: 62.5
     z: 0.0
@@ -97,7 +104,11 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "gamescreenGUI/MenuButtonGS"
+<<<<<<< HEAD
   id: "MenuButton"
+=======
+  id: "menuButton"
+>>>>>>> Development
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -151,7 +162,11 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "gamescreenGUI/HelpButtonGS"
+<<<<<<< HEAD
   id: "HelpButton"
+=======
+  id: "helpButton"
+>>>>>>> Development
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -205,12 +220,70 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "gamescreenGUI/GameScreenMenuBox"
+<<<<<<< HEAD
   id: "GameScreenMenuBox"
+=======
+  id: "menuBox"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
   adjust_mode: ADJUST_MODE_FIT
   layer: "background"
+  inherit_alpha: true
+  slice9 {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+  }
+  clipping_mode: CLIPPING_MODE_NONE
+  clipping_visible: true
+  clipping_inverted: false
+  alpha: 1.0
+  template_node_child: false
+  size_mode: SIZE_MODE_MANUAL
+}
+nodes {
+  position {
+    x: 640.0
+    y: 62.5
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 400.0
+    y: 90.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_BOX
+  blend_mode: BLEND_MODE_ALPHA
+  texture: "gamescreenGUI/SoundButton"
+  id: "soundButton"
+>>>>>>> Development
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_CENTER
+  adjust_mode: ADJUST_MODE_FIT
+  layer: "Front"
   inherit_alpha: true
   slice9 {
     x: 0.0
