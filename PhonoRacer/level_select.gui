@@ -231,8 +231,8 @@ nodes {
 }
 nodes {
   position {
-    x: 95.0
-    y: 625.0
+    x: 98.0
+    y: 614.0
     z: 0.0
     w: 1.0
   }
@@ -263,7 +263,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: "Level_Select/BackArrow"
-  id: "back"
+  id: "backls"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER

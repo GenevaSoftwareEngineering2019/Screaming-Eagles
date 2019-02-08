@@ -4,6 +4,9 @@ images {
 images {
   image: "/assets/images/Level_Select Images/BackArrow.png"
 }
+images {
+  image: "/assets/images/Achievement Images/Trophy Screen.jpg"
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 0

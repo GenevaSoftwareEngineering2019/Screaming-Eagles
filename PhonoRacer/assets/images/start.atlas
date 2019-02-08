@@ -22,6 +22,9 @@ images {
 images {
   image: "/assets/images/Home Images/AchieveButtonV2.png"
 }
+images {
+  image: "/assets/images/Home Images/phonoracerlogo.png"
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 0
