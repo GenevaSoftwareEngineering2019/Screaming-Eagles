@@ -1,6 +1,6 @@
 components {
   id: "Large Objects"
-  component: "/Background/Large Objects.script"
+  component: "/Background/Clouds.script"
   position {
     x: 0.0
     y: 0.0

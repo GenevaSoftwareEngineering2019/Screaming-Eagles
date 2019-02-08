@@ -1,6 +1,6 @@
 components {
   id: "Fast Objects"
-  component: "/Background/Fast Objects.script"
+  component: "/Background/Trees.script"
   position {
     x: 0.0
     y: 0.0
