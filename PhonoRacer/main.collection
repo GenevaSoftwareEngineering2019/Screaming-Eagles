@@ -123,8 +123,8 @@ instances {
   id: "PhonoTrigger"
   prototype: "/Background/game_objects/PhonoTrigger.go"
   position {
-    x: 400.0
-    y: 176.0
+    x: 548.0
+    y: 189.0
     z: 0.0
   }
   rotation {
@@ -134,8 +134,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 1.0
-    y: 1.0
+    x: 1.872
+    y: 1.512
     z: 1.0
   }
 }
@@ -163,8 +163,8 @@ instances {
   id: "OtherCars"
   prototype: "/GameScreen/OtherCars.go"
   position {
-    x: 1146.0
-    y: 167.0
+    x: 1158.0
+    y: 188.0
     z: 1.0
   }
   rotation {
@@ -174,8 +174,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 1.0
-    y: 1.0
+    x: 1.851
+    y: 2.058
     z: 1.0
   }
 }
@@ -183,8 +183,8 @@ instances {
   id: "Trees2"
   prototype: "/Background/game_objects/Trees.go"
   position {
-    x: 1139.0
-    y: 30.0
+    x: 1380.0
+    y: -84.0
     z: 0.2
   }
   rotation {
@@ -194,8 +194,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 0.873
-    y: 0.873
+    x: 1.335
+    y: 1.384
     z: 0.873
   }
 }
@@ -203,8 +203,8 @@ instances {
   id: "Trees1"
   prototype: "/Background/game_objects/Trees.go"
   position {
-    x: -34.0
-    y: 37.0
+    x: -217.0
+    y: -53.0
     z: 0.2
   }
   rotation {
@@ -214,8 +214,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 0.873
-    y: 0.873
+    x: 1.289
+    y: 1.273
     z: 0.873
   }
 }
@@ -223,8 +223,8 @@ instances {
   id: "Clouds2"
   prototype: "/Background/game_objects/Clouds.go"
   position {
-    x: 1139.0
-    y: 30.0
+    x: 1292.0
+    y: 111.0
     z: 0.2
   }
   rotation {
@@ -234,8 +234,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 0.873
-    y: 0.873
+    x: 1.253
+    y: 1.002
     z: 0.873
   }
 }
@@ -254,8 +254,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 0.873
-    y: 0.873
+    x: 1.087
+    y: 1.001
     z: 0.873
   }
 }
