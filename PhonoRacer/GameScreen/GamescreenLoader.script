@@ -18,6 +18,8 @@ function on_message(self, message_id, message, sender)
 		msg.post(sender, "enable")
 	elseif message_id == hash("Freeze") then
 		msg.post("#Gamescreenproxy1", "set_time_step", {factor = 0.000001, mode = 0})
+	elseif message_id == hash("Resume") then
+		msg.post("#Gamescreenproxy1", "set_time_step", {factor = 1, mode = 0})
 	end
 end
 
