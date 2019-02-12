@@ -8,10 +8,6 @@ function init(self)
 		
 end
 
-	local pos = go.get_position("TopPhono")
-		if p.x <= 800 then
-			local pausenode = gui.get_node("GameScreenGui")
-
 function on_message(self, message_id, message)
 end
 

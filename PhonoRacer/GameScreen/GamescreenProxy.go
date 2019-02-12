@@ -16,7 +16,7 @@ components {
 embedded_components {
   id: "Gamescreenproxy1"
   type: "collectionproxy"
-  data: "collection: \"/main.collection\"\n"
+  data: "collection: \"/Levels/main.collection\"\n"
   "exclude: false\n"
   ""
   position {
