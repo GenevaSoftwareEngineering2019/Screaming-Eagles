@@ -1,4 +1,4 @@
-script: ""
+script: "/GameScreen/HelpScreen.gui_script"
 textures {
   name: "HelpScreenGui"
   texture: "/GameScreen/HelpScreenGui.atlas"
