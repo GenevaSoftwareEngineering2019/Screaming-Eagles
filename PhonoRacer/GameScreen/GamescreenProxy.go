@@ -14,9 +14,9 @@ components {
   }
 }
 embedded_components {
-  id: "Gamescreenproxy1"
+  id: "Level1Proxy"
   type: "collectionproxy"
-  data: "collection: \"/Levels/main.collection\"\n"
+  data: "collection: \"/Levels/Level1.collection\"\n"
   "exclude: false\n"
   ""
   position {
