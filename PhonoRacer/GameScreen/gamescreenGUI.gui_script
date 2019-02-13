@@ -10,13 +10,12 @@ function on_input(self, action_id, action)
 		if gui.pick_node(HelpButton, action.x, action.y) "HelpScreen" 
 		then
 			msg.post("HelpScreen", "show_HelpScreen")
-			msg.post("HelpScreen", "Pause")
-			
-			
+			msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
 		end
 	end
 end
-		function on_message(self, message_id, message, sender)
+function on_message(self, message_id, message, sender)
+		
 			if message_id == hash("add_score") then
 				local s = 1.2
 				self.score = self.score + message.amount

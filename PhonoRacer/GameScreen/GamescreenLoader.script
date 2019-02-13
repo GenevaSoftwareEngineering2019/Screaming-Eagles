@@ -2,7 +2,6 @@ function init(self)
 	msg.post("#Gamescreenproxy1", "load")
 	msg.post(".", "acquire_input_focus")
 	self.score = 0
-	self.score_node = gui.get_node("score")
 end
 
 function final(self)
