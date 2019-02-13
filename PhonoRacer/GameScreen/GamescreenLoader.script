@@ -9,7 +9,7 @@ function final(self)
 end
 
 function update(self, dt)
-	print("update() with timestep (dt)" .. dt)
+	
 end
 
 function on_message(self, message_id, message, sender)
