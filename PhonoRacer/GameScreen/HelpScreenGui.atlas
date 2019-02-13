@@ -1,15 +1,5 @@
 images {
-  image: "/assets/images/Under_Construction.png"
-}
-animations {
-  id: "New Animation"
-  images {
-    image: "/assets/images/Under_Construction.png"
-  }
-  playback: PLAYBACK_LOOP_FORWARD
-  fps: 60
-  flip_horizontal: 0
-  flip_vertical: 0
+  image: "/assets/images/videohelpscreen.jpg"
 }
 margin: 0
 extrude_borders: 0
