@@ -1,6 +1,9 @@
 images {
   image: "/assets/images/Under_Construction.png"
 }
+images {
+  image: "/assets/images/background_images/HelpButtonGS.png"
+}
 animations {
   id: "New Animation"
   images {
