@@ -9,10 +9,15 @@
 function comparisionOfPhonograms( letter1, letter2)
 	Display letter1 and letter2
 	Play sound letter 1
-	If user selects letter 1
-		Score += 1
+	If user selects letter1
+	then
+		msg.post("GameScreen#gamescreenGUI", "add_score", {1)
 		Play sound good job
-	elseIf user selects letter 2
+	end
+	elseIf user selects letter2
+	then
 		Play sound woops
+	end 
+	hide both letters
 	Delay 6 seconds
 end

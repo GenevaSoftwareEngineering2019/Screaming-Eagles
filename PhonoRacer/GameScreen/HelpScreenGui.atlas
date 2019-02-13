@@ -1,5 +1,22 @@
 images {
+<<<<<<< HEAD
   image: "/assets/images/videohelpscreen.jpg"
+=======
+  image: "/assets/images/Under_Construction.png"
+}
+images {
+  image: "/assets/images/background_images/HelpButtonGS.png"
+}
+animations {
+  id: "New Animation"
+  images {
+    image: "/assets/images/Under_Construction.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 60
+  flip_horizontal: 0
+  flip_vertical: 0
+>>>>>>> f3c97c6488e3e2f7a58c7d4abe46a4828f0ebd72
 }
 margin: 0
 extrude_borders: 0
