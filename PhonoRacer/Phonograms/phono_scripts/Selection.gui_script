@@ -12,6 +12,10 @@ function on_message(self, message_id, message, sender)
 		msg.post("#", "disable")
 		self.active = false
 	end
+	local Phono1 = gui.get_node("text1")
+	local Phono2 = gui.get_node("text2")
+	gui.set_text(Phono1, "A")
+	gui.set_text(Phono2, "C")
 end
 
 --[[function on_message(self, message_id, message, sender)
