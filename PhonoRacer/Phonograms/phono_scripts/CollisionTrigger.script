@@ -1,12 +1,17 @@
 local speed = -100
+i = 0
 
 function update(self, dt)
-	local p = go.get_position()
+	p = go.get_position()
 	p.x = p.x + speed * dt
 	go.set_position(p)
-	if p.x <= -200 then
+	if p.x <= -300 then
 		p.x = 2000
 		go.set_position(p)
+		msg.post("#", "Count")
+		i = i + 1
+		print (i)
+		return i
 	end
 end
 
@@ -15,7 +20,15 @@ function on_message(self, message_id, message, sender)
 		if message.enter then
 		msg.post("Selection", "show_Selection")
 		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
-		else
+		end
+	end
+	if message_id == hash("Count") then
+		if i == 1 then
+			
+		elseif i == 2 then
+			
+		elseif i == 3 then
+			
 		end
 	end
 end
