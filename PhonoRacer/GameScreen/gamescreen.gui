@@ -120,47 +120,7 @@ nodes {
 nodes {
   position {
     x: 200.0
-<<<<<<< HEAD:PhonoRacer/level_select.gui
-    y: 200.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_BOX
-  blend_mode: BLEND_MODE_ALPHA
-  texture: "Level_Select/Number3"
-  id: "level_3"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
-  adjust_mode: ADJUST_MODE_FIT
-  layer: "front"
-  inherit_alpha: true
-  slice9 {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0
-  }
-  clipping_mode: CLIPPING_MODE_NONE
-  clipping_visible: true
-  clipping_inverted: false
-  alpha: 1.0
-  template_node_child: false
-  size_mode: SIZE_MODE_MANUAL
-}
-nodes {
-  position {
-    x: 98.0
-    y: 614.0
-=======
     y: 62.5
->>>>>>> GameScreen:PhonoRacer/GameScreen/gamescreen.gui
     z: 0.0
     w: 1.0
   }
@@ -190,13 +150,8 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-<<<<<<< HEAD:PhonoRacer/level_select.gui
-  texture: "Level_Select/BackArrow"
-  id: "backls"
-=======
   texture: "gamescreenGUI/HelpButtonGS"
   id: "HelpButton"
->>>>>>> GameScreen:PhonoRacer/GameScreen/gamescreen.gui
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER

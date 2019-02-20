@@ -204,14 +204,9 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-<<<<<<< HEAD:PhonoRacer/start.gui
-  texture: "start/AchieveButtonV2"
-  id: "achievements"
-=======
   text: "<text>"
   font: "GeneralUse"
   id: "text1"
->>>>>>> GameScreen:PhonoRacer/Phonograms/Selection.gui
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
