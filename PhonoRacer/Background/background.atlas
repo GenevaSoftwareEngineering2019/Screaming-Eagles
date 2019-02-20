@@ -1,0 +1,15 @@
+images {
+  image: "/assets/images/background_images/Tree(Resized).png"
+}
+images {
+  image: "/assets/images/background_images/Cloud(Redone).png"
+}
+images {
+  image: "/assets/images/background_images/background.jpg"
+}
+images {
+  image: "/assets/images/background_images/Asphalt.jpg"
+}
+margin: 0
+extrude_borders: 1
+inner_padding: 0

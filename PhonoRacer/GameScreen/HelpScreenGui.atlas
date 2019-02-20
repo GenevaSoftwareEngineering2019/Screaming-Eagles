@@ -1,0 +1,12 @@
+images {
+  image: "/assets/images/videohelpscreen.jpg"
+}
+images {
+  image: "/assets/images/HelpScreenPressed.png"
+}
+images {
+  image: "/assets/images/Achievement Images/Trophy Screen.jpg"
+}
+margin: 0
+extrude_borders: 0
+inner_padding: 0

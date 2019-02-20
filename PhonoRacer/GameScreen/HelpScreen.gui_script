@@ -1,0 +1,44 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	msg.post("#", "hide_HelpScreen")
+
+	self.active = true
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("show_HelpScreen") then
+		msg.post("#", "enable")
+		self.active = true
+		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
+	elseif message_id == hash("hide_HelpScreen") then
+		msg.post("#", "disable")
+		self.active = false
+		msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
+	end
+
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("click") and action.pressed then
+		local BackButton = gui.get_node("BackButton")
+		if gui.pick_node(BackButton, action.x, action.y)
+		then
+			msg.post("#", "hide_HelpScreen")
+		end
+	end
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end

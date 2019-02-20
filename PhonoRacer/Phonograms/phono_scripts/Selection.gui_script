@@ -1,0 +1,55 @@
+function init(self)
+	msg.post("#", "hide_Selection")
+	self.active = false
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("show_Selection") then
+		msg.post("#", "enable")
+		self.active = true
+		msg.post(".", "acquire_input_focus")
+	elseif message_id == hash("hide_Selection") then
+		msg.post("#", "disable")
+		self.active = false
+	end
+	local Phono1 = gui.get_node("text1")
+	local Phono2 = gui.get_node("text2")
+	gui.set_text(Phono1, "A")
+	gui.set_text(Phono2, "C")
+end
+
+--[[function on_message(self, message_id, message, sender)
+	if message_id == hash("Pause") then
+		msg.post(receiver, message_id)
+	end
+end]]
+
+function on_input(self, action_id, action)
+	--testing input
+	if action_id == hash("click") and action.pressed and self.active then
+<<<<<<< HEAD:PhonoRacer/main/level_select.gui_script
+		--[[for n = 1,3 do
+			local node = gui.get_node("level_" .. n)
+			if gui.pick_node(node, action.x, action.y) then
+				msg.post("/loader#loader", "load_level", {level = n})
+				msg.post("#", "hide_level_select")
+			end
+		end ]]--
+
+		local backls = gui.get_node("backls")
+		if gui.pick_node(backls, action.x, action.y) then
+			msg.post("#level_select", "hide_level_select")
+			msg.post("#grade_select", "show_grade_select")
+=======
+		local Phono1 = gui.get_node("Phono1")
+		local Phono2 = gui.get_node("Phono2")
+		if gui.pick_node(Phono1, action.x, action.y) then
+			msg.post("#", "hide_Selection")
+		elseif gui.pick_node(Phono2, action.x, action.y) then
+			msg.post("#", "hide_Selection")
+>>>>>>> GameScreen:PhonoRacer/Phonograms/phono_scripts/Selection.gui_script
+		end
+
+		msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
+	end
+end
