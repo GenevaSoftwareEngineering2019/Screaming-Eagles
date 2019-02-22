@@ -12,10 +12,88 @@ function on_message(self, message_id, message, sender)
 		msg.post("#", "disable")
 		self.active = false
 	end
+
+	-- deprecated method
+	--[[
 	local Phono1 = gui.get_node("text1")
 	local Phono2 = gui.get_node("text2")
 	gui.set_text(Phono1, "A")
 	gui.set_text(Phono2, "C")
+	--]]
+
+	--lua tables begin at 1, not 0, and the total size of the current 
+	-- table in phontab is 8
+	-- for some reason ind1 is always 1 ??
+	-- set int1 random to 1 - n/2,
+	-- set int2 random to n/2+1 - total
+
+	-- total is the number of values to select from
+	-- randomseed needs to be called twice for two different numbers
+
+	total = 80
+	total2 = total - 1
+	n1 = total2 / 2
+	n2 = n1 + 1
+	math.randomseed(os.time() * 123456)
+	--ind1 = math.random(1, n1)
+	ind1 = math.random(1, total)
+	math.randomseed(os.clock() * 420)
+	--ind2 = math.random(n2, total)
+	ind2 = math.random(1, total)	
+
+	-- attempts to ensure neither number is the same
+	-- messy and does not currently work
+	--[[
+	if ind1 == ind2 then
+		math.randomseed(os.time())
+		ind2 = math.randomseed(1, total)
+	elseif ind1 ~= in2 then
+
+		local Phono1 = gui.get_node("text1")
+		local Phono2 = gui.get_node("text2")
+		gui.set_text(Phono1, ind1)
+		gui.set_text(Phono2, ind2)
+
+		math.randomseed(os.time())	
+	end
+	--]]
+	
+	
+	-- feed ind1 and ind2 to either collection factory or phontab table, or print to text
+	local Phono1 = gui.get_node("text1")
+	local Phono2 = gui.get_node("text2")
+	gui.set_text(Phono1, ind1)
+	gui.set_text(Phono2, ind2)
+
+
+	-- positions are right in front of white box nodes in gui
+--[[
+	local pos1 = vmath.vector3(387, 377, -1)
+	local pos2 = vmath.vector3(871, 386, -1)
+	local phonoScale = 1
+	local props = {}
+
+	props[hash("/option1")] = { IsCorrect = 1}
+	props[hash("/option2")] = { IsCorrect = 2}
+
+	local ids = collectionfactory.create("/spawner#collectionfactory", pos1, nil, props, phonoScale)	
+--]]
+
+--decides which one is coorect
+--generates random boolean
+-- bIsCorrect1 is for left phonogram, 2 for right
+	math.randomseed(os.time() * 10)
+	rand = math.random(100)
+	if rand < 50 then
+		bIsCorrect1 = true
+		bIsCorrect2 = false
+
+	else
+		bIscorrect1 = false
+		bIsCorrect2 = true
+	end
+
+
 end
 
 --[[function on_message(self, message_id, message, sender)
