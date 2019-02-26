@@ -358,3 +358,33 @@ components {
     w: 1.0
   }
 }
+components {
+  id: "24"
+  component: "/Phonograms/Phonogram Audio/24.ogg"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
+components {
+  id: "35"
+  component: "/Phonograms/Phonogram Audio/35.ogg"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
