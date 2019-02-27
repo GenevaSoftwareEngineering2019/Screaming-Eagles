@@ -28,19 +28,23 @@ function on_message(self, message_id, message, sender)
 	-- set int2 random to n/2+1 - total
 
 	-- total is the number of values to select from
+	-- total must be even
+	
 	-- randomseed needs to be called twice for two different numbers
 
-	total = 80
+	total = 71
 	total2 = total - 1
 	n1 = total2 / 2
+	math.floor(n1)
 	n2 = n1 + 1
-	math.randomseed(os.time() * 123456)
+	math.randomseed(os.clock() * 123456)
 	--ind1 = math.random(1, n1)
-	ind1 = math.random(1, total)
-	math.randomseed(os.clock() * 420)
+	ind1 = math.random(1, n1)
+	
+	math.randomseed(os.clock() * 42000)
 	--ind2 = math.random(n2, total)
-	ind2 = math.random(1, total)	
-	ind3 = math.random(1, 3)
+	ind2 = math.random(n2, total)	
+	--ind3 = math.random(1, 3)
 
 	-- attempts to ensure neither number is the same
 	-- messy and does not currently work
