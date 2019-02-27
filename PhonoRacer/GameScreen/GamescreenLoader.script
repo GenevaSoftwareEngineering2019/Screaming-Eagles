@@ -1,5 +1,4 @@
 function init(self)
-	msg.post("#Level1Proxy", "load")
 	msg.post(".", "acquire_input_focus")
 	self.score = 0
 end
@@ -14,7 +13,10 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id == hash("proxy_loaded") then
+	if message_id == hash("loadK1") then
+		print(1)
+		msg.post("#Level1Proxy", "load")
+	elseif message_id == hash("proxy_loaded") then
 		msg.post(sender, "init")
 		msg.post(sender, "enable")
 	elseif message_id == hash("Freeze") then

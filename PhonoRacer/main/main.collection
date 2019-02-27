@@ -1,4 +1,24 @@
 name: "default"
+instances {
+  id: "GamescreenProxy"
+  prototype: "/GameScreen/GamescreenProxy.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 collection_instances {
   id: "Gui"
   collection: "/main/Gui.collection"
@@ -100,7 +120,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"music\"\n"
   "  type: \"sound\"\n"
-  "  data: \"sound: \\\"/Audio/Undertale - Megalovania.ogg\\\"\\n"
+  "  data: \"sound: \\\"/Phonograms/Phonogram Audio/00.ogg\\\"\\n"
   "looping: 0\\n"
   "group: \\\"master\\\"\\n"
   "gain: 1.0\\n"
