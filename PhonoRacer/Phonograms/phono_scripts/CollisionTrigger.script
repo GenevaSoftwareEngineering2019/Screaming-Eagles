@@ -1,4 +1,4 @@
-local speed = -100
+local speed = -500
 i = 0
 
 function update(self, dt)
