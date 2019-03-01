@@ -18,6 +18,7 @@ function on_message(self, message_id, message, sender)
 			return i
 		elseif i >= 9 then
 			go.delete()
+			msg.post("EndScreen#EndScreen", "show_EndScreen")
 		end
 	end
 end
