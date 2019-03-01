@@ -1,7 +1,7 @@
-script: "/GameScreen/GamescreenMenu.gui_script"
+script: "/GameScreen/Gamescreen Menu/GamescreenMenu.gui_script"
 textures {
   name: "Gamescreen Menu"
-  texture: "/GameScreen/Gamescreen Menu.atlas"
+  texture: "/GameScreen/Gamescreen Menu/Gamescreen Menu.atlas"
 }
 background_color {
   x: 0.0

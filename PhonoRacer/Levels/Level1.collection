@@ -21,7 +21,7 @@ instances {
 }
 instances {
   id: "GameScreen Gui"
-  prototype: "/GameScreen/GameScreen Gui.go"
+  prototype: "/GameScreen/Gamescreen Gui/GameScreen Gui.go"
   position {
     x: 6.0
     y: 1.0
@@ -141,7 +141,7 @@ instances {
 }
 instances {
   id: "HelpScreen Gui"
-  prototype: "/GameScreen/HelpScreen Gui.go"
+  prototype: "/GameScreen/Helpscreen/HelpScreen Gui.go"
   position {
     x: 0.0
     y: 0.0
@@ -163,8 +163,8 @@ instances {
   id: "OtherCars"
   prototype: "/GameScreen/OtherCars.go"
   position {
-    x: 1158.0
-    y: 188.0
+    x: 1152.0
+    y: 199.0
     z: 1.0
   }
   rotation {
@@ -261,11 +261,31 @@ instances {
 }
 instances {
   id: "Gamescreen Menu"
-  prototype: "/GameScreen/Gamescreen Menu.go"
+  prototype: "/GameScreen/Gamescreen Menu/Gamescreen Menu.go"
   position {
     x: 0.0
     y: 0.0
     z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "Score"
+  prototype: "/GameScreen/Score/Score.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
   }
   rotation {
     x: 0.0

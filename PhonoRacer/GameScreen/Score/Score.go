@@ -1,6 +1,6 @@
 components {
-  id: "gamescreen"
-  component: "/GameScreen/Gamescreen Gui/gamescreen.gui"
+  id: "CountScore"
+  component: "/GameScreen/Score/CountScore.script"
   position {
     x: 0.0
     y: 0.0

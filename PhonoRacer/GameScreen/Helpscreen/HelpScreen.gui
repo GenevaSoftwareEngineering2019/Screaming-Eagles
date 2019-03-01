@@ -1,11 +1,11 @@
-script: "/GameScreen/HelpScreen.gui_script"
+script: "/GameScreen/Helpscreen/HelpScreen.gui_script"
 fonts {
   name: "GeneralUse"
   font: "/assets/Fonts/GeneralUse.font"
 }
 textures {
   name: "HelpScreenGui"
-  texture: "/GameScreen/HelpScreenGui.atlas"
+  texture: "/GameScreen/Helpscreen/HelpScreenGui.atlas"
 }
 background_color {
   x: 0.0

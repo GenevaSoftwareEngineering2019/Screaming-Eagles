@@ -1,6 +1,6 @@
 components {
   id: "GamescreenMenu"
-  component: "/GameScreen/GamescreenMenu.gui"
+  component: "/GameScreen/Gamescreen Menu/GamescreenMenu.gui"
   position {
     x: 0.0
     y: 0.0

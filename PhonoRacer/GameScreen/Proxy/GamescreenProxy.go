@@ -1,6 +1,6 @@
 components {
   id: "GamescreenLoader"
-  component: "/GameScreen/GamescreenLoader.script"
+  component: "/GameScreen/Proxy/GamescreenLoader.script"
   position {
     x: 0.0
     y: 0.0

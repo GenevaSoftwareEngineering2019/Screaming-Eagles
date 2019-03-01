@@ -1,0 +1,23 @@
+i = 0
+
+function init(self)
+	
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("Count") then
+		if i <= 8 then
+			i = i + 1
+			print (i)
+			msg.post("OtherCars#CollisionTrigger", "Reset")
+			return i
+		elseif i >= 9 then
+			go.delete()
+		end
+	end
+end

@@ -1,6 +1,6 @@
 components {
   id: "HelpScreen"
-  component: "/GameScreen/HelpScreen.gui"
+  component: "/GameScreen/Helpscreen/HelpScreen.gui"
   position {
     x: 0.0
     y: 0.0
