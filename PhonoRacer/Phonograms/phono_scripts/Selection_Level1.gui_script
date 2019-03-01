@@ -165,22 +165,29 @@ function on_message(self, message_id, message, sender)
 	local Phono2 = gui.get_node("text2")
 	gui.set_text(Phono1, ind1)
 	gui.set_text(Phono2, ind2)
-	local letters = {“00”, “01”, “02”, “03”, “04”, “05”, “06”, “07”, “08”, “09”, “10”, “11”, “12”, “13”, “14”, “15”, “16”, “17”, “18”, “19”, “20”, “21”, “22”, “23”, “24”, “25”, “26”, “27”, “28”, “29”, “30”, “31”, “32”, “33”, “34”, “35”, “36”, “37”, “38”, “39”, “40”, “41”, “42”, “43”, “44”, “45”, “46”, “47”, “48”, “49”, “50”, “51”, “52”, “53”, “54”, “55”, “56”, “57”, “58”, “59”, “60”, “61”, “62”, “63”, “64”, “65”, “66”, “67”, “68”, “69”, “70”}
+	local letters = {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70"} 
 	math.randomseed(os.time() * 10)
 	rand = math.random(100)
 	if rand < 50 then
 		bIsCorrect1 = true
 		bIsCorrect2 = false
-		msg.post("Selection#" .. letters[ Phono1 ], "play_sound", {delay = 2, gain = 0.5})
-		--pickedSound = "Selection#" letters[ Phono1 ]
-	else 
+		for key in self.letters do
+			if key = ind1 then 
+				msg.post("Selection#key", "play_sound", {delay = 2, gain = 0.5})
+			end
+			--pickedSound = "Selection#" letters[ Phono1 ]
+		end
 
+	else 
 		bIscorrect1 = false
-		bIsCorrect2 = true
+		bIsCorrect2 = truefor 
+		for key in self.letters do
+			if key = ind1 then
+				msg.post("Selection#key", "play_sound", {delay = 2, gain = 0.5})
+			end
+		end
 		--pickedSound = "Selection#" letters[ Phono2 ]
 	end
-	msg.post(pickedSound, "play_sound", {delay = 2, gain = 0.5})
-
 
 end
 
