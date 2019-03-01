@@ -79,6 +79,6 @@ function init(self)
 		table[70] = "y"
 		table[71] = "z"
 		
-		
+	
 	
 	}

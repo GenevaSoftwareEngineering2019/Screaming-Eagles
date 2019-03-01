@@ -67,6 +67,7 @@ function on_message(self, message_id, message, sender)
 	-- feed ind1 and ind2 to either collection factory or phontab table, or print to text
 	local Phono1 = gui.get_node("text1")
 	local Phono2 = gui.get_node("text2")
+	--local m = require "PhonoGrams/phono_scripts/LetterTable"
 	gui.set_text(Phono1, ind1)
 	gui.set_text(Phono2, ind2)
 	local letters = {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70"} 
@@ -75,7 +76,7 @@ function on_message(self, message_id, message, sender)
 	if rand < 50 then
 		bIsCorrect1 = true
 		bIsCorrect2 = false
-		msg.post("Selection#" letters(#ind1), "play_sound", {delay = 2, gain = 0.5})
+		--msg.post("Selection#" letters#ind1, "play_sound", {delay = 2, gain = 0.5})
 			
 			--pickedSound = "Selection#" letters[ Phono1 ]
 		
@@ -83,7 +84,7 @@ function on_message(self, message_id, message, sender)
 	else 
 		bIscorrect1 = false
 		bIsCorrect2 = truefor 
-		msg.post("Selection#" letters(#ind2), "play_sound", {delay = 2, gain = 0.5})
+		--msg.post("Selection#" letters#ind2, "play_sound", {delay = 2, gain = 0.5})
 		
 			--pickedSound = "Selection#" letters[ Phono2 ]
 	end
