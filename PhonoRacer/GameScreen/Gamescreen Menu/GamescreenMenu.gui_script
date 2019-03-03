@@ -1,0 +1,47 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	msg.post("#", "hide_GamescreenMenu")
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("show_GamescreenMenu") then
+		msg.post("#", "enable")
+		self.active = true
+		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
+	elseif message_id == hash("hide_GamescreenMenu") then
+		msg.post("#", "disable")
+		self.active = false
+		msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
+	end
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("click") and action.pressed then
+		local Back = gui.get_node("Go Back")
+		if gui.pick_node(Back, action.x, action.y) then
+			msg.post("#", "hide_GamescreenMenu")
+		end
+	end
+
+	--[[if action_id == hash("click") and action.pressed then
+	local  = gui.get_node("")
+		if gui.pick_node(, action.x, action.y) then
+		msg.post("#", "")
+		end
+	end]]
+end
+
+function on_reload(self)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end

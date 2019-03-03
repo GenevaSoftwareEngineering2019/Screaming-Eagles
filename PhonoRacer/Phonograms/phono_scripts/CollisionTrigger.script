@@ -1,4 +1,4 @@
-local speed = -100
+local speed = -500
 i = 0
 
 function update(self, dt)
@@ -6,12 +6,7 @@ function update(self, dt)
 	p.x = p.x + speed * dt
 	go.set_position(p)
 	if p.x <= -300 then
-		p.x = 2000
-		go.set_position(p)
-		msg.post("#", "Count")
-		i = i + 1
-		print (i)
-		return i
+		msg.post("Score#CountScore", "Count")
 	end
 end
 
@@ -22,13 +17,9 @@ function on_message(self, message_id, message, sender)
 		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
 		end
 	end
-	if message_id == hash("Count") then
-		if i == 1 then
-			
-		elseif i == 2 then
-			
-		elseif i == 3 then
-			
-		end
+
+	if message_id == hash("Reset") then
+		p.x = 2000
+		go.set_position(p)
 	end
 end

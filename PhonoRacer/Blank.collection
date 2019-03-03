@@ -1,7 +1,7 @@
 name: "default"
 instances {
   id: "GamescreenProxy"
-  prototype: "/GameScreen/GamescreenProxy.go"
+  prototype: "/GameScreen/Proxy/GamescreenProxy.go"
   position {
     x: 0.0
     y: 0.0
