@@ -67,9 +67,10 @@ function on_message(self, message_id, message, sender)
 	-- feed ind1 and ind2 to either collection factory or phontab table, or print to text
 	local Phono1 = gui.get_node("text1")
 	local Phono2 = gui.get_node("text2")
-	--local m = require "PhonoGrams/phono_scripts/LetterTable"
-	gui.set_text(Phono1, ind1)
-	gui.set_text(Phono2, ind2)
+	phonograms = {"a", "ai", "ar", "au", "aw", "ay", "b", "c", "ch", "ci", "ck", "d", "dge", "e", "ea", "ear", "ed", "ee", "ei", "eigh", "er", "eu", "ew", "ey", "f", "g", "gn", "h", "i", "ie", "igh", "ir", "j", "k", "kn", "l", "m", "n", "ng", "o", "oa", "oe", "oi", "oo", "or", "ou", "ough", "ow", "oy", "p", "ph", "qu", "r", "s", "sh", "si", "t", "tch", "th", "ti", "u", "ui", "ur", "v", "w", "wh", "wor", "wr", "x", "y", "z" }
+
+	gui.set_text(Phono1, phonograms[ind1])
+	gui.set_text(Phono2, phonograms[ind2])
 	local letters = {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70"} 
 	math.randomseed(os.time() * 10)
 	rand = math.random(100)
