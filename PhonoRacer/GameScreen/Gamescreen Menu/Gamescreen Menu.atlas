@@ -1,0 +1,9 @@
+images {
+  image: "/assets/images/gamemenuborder.jpg"
+}
+images {
+  image: "/assets/images/MenuPressed.png"
+}
+margin: 0
+extrude_borders: 0
+inner_padding: 0

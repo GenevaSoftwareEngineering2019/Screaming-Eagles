@@ -1,6 +1,6 @@
 components {
   id: "Car1"
-  component: "/GameScreen/Car1.script"
+  component: "/GameScreen/car/Car1.script"
   position {
     x: 0.0
     y: 0.0

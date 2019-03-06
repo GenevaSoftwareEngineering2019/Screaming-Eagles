@@ -1,0 +1,15 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	self.active = true
+end
+function on_input(self, action_id, action)
+	if action_id == hash("click") and action.pressed and self.active then
+		local help = gui.get_node("HelpButton")
+		local GMenu = gui.get_node("MenuButton")
+		if gui.pick_node(help, action.x, action.y) then
+			msg.post("/HelpScreen Gui#HelpScreen", "show_HelpScreen")
+		elseif gui.pick_node(GMenu, action.x, action.y) then
+			msg.post("Gamescreen Menu#GamescreenMenu", "show_GamescreenMenu")
+		end
+	end
+end
