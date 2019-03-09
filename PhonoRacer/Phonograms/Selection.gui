@@ -3,6 +3,10 @@ fonts {
   name: "GeneralUse"
   font: "/assets/Fonts/GeneralUse.font"
 }
+textures {
+  name: "Selection"
+  texture: "/Phonograms/Selection.atlas"
+}
 background_color {
   x: 0.0
   y: 0.0
@@ -150,7 +154,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: ""
+  texture: "Selection/SoundPressed"
   id: "SoundButton"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -167,7 +171,7 @@ nodes {
   clipping_mode: CLIPPING_MODE_NONE
   clipping_visible: true
   clipping_inverted: false
-  alpha: 0.0
+  alpha: 1.0
   template_node_child: false
   size_mode: SIZE_MODE_MANUAL
 }

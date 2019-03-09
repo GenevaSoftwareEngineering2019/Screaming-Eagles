@@ -51,15 +51,15 @@ function on_message(self, message_id, message, sender)
 		bIsCorrect1 = true
 		bIsCorrect2 = false
 		local using1 = ind1
-		local pickedPhono = "Selection#" .. letters[ using1( #letters ) ]
-		msg.post(pickedPhono, "play_sound", {delay = 8, gain = 0.5})
+		pickedPhono = "Selection#" .. ind1 ]
+		msg.post(pickedPhono, "play_sound", {delay = 2, gain = 0.5})
 		--pickedSound = "Selection#" letters[ Phono1 ]
 	else 
 		bIscorrect1 = false
 		bIsCorrect2 = true
 		local using2 = ind2
-		local pickedPhono = "Selection#" .. letters[ using2( #letters ) ]
-		msg.post(pickedPhono, "play_sound", {delay = 8, gain = 0.5})
+		pickedPhono = "Selection#" .. ind2 ]
+		msg.post(pickedPhono, "play_sound", {delay = 2, gain = 0.5})
 		--pickedSound = "Selection#" letters[ Phono2 ]
 	end
 	--This depreciated method is something I am working on long term as a solution
@@ -87,11 +87,13 @@ function on_message(self, message_id, message, sender)
 		--end
 	end ]]--
 	function on_input(self, action_id, action)
-		--testing input
 		if action_id == hash("click") and action.pressed and self.active then
 			local Phono1 = gui.get_node("Phono1")
 			local Phono2 = gui.get_node("Phono2")
+			local sound_Button = gui.get_node("SoundButton")
 			if gui.pick_node(Phono1, action.x, action.y) then
+				msg.post(pickedPhono, "play_sound", {delay = 1, gain = 0.5})
+			elseif gui.pick_node(Phono1, action.x, action.y) then
 				msg.post("#", "hide_Selection")
 				msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
 			elseif gui.pick_node(Phono2, action.x, action.y) then
@@ -99,4 +101,3 @@ function on_message(self, message_id, message, sender)
 				msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
 			end
 		end
-end
