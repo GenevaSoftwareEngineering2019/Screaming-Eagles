@@ -120,7 +120,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"music\"\n"
   "  type: \"sound\"\n"
-  "  data: \"sound: \\\"/assets/Audio/Test.ogg\\\"\\n"
+  "  data: \"sound: \\\"/assets/Audio/Race Driver Grid Menu Music.ogg\\\"\\n"
   "looping: 0\\n"
   "group: \\\"master\\\"\\n"
   "gain: 1.0\\n"
