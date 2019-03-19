@@ -1,60 +1,19 @@
-animations {
-  id: "New Animation"
-  images {
-    image: "/assets/images/background_images/police00.png"
-  }
-  images {
-    image: "/assets/images/background_images/police01.png"
-  }
-  images {
-    image: "/assets/images/background_images/police02.png"
-  }
-  images {
-    image: "/assets/images/background_images/police03.png"
-  }
-  images {
-    image: "/assets/images/background_images/police04.png"
-  }
-  images {
-    image: "/assets/images/background_images/police05.png"
-  }
-  images {
-    image: "/assets/images/background_images/police06.png"
-  }
-  images {
-    image: "/assets/images/background_images/police07.png"
-  }
-  images {
-    image: "/assets/images/background_images/police08.png"
-  }
-  images {
-    image: "/assets/images/background_images/police09.png"
-  }
-  images {
-    image: "/assets/images/background_images/police10.png"
-  }
-  images {
-    image: "/assets/images/background_images/police11.png"
-  }
-  images {
-    image: "/assets/images/background_images/police12.png"
-  }
-  playback: PLAYBACK_LOOP_FORWARD
-  fps: 40
-  flip_horizontal: 0
-  flip_vertical: 0
+images {
+  image: "/assets/images/background_images/UserCar/UserCar.png"
 }
 animations {
-  id: "Animation"
-  playback: PLAYBACK_LOOP_FORWARD
-  fps: 8
-  flip_horizontal: 0
-  flip_vertical: 0
-}
-animations {
-  id: "Car"
+  id: "Wheels"
   images {
-    image: "/assets/images/background_images/1-14129_vehicle-clipart-transparent-car-cartoon-car-side-view/RaceCar0.png"
+    image: "/assets/images/background_images/UserCar/carwheel1.png"
+  }
+  images {
+    image: "/assets/images/background_images/UserCar/carwheel2.png"
+  }
+  images {
+    image: "/assets/images/background_images/UserCar/carwheel3.png"
+  }
+  images {
+    image: "/assets/images/background_images/UserCar/carwheel4.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 60

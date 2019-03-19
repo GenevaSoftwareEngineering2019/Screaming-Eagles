@@ -1,0 +1,25 @@
+images {
+  image: "/assets/images/background_images/Car2/OtherCar1.png"
+}
+animations {
+  id: "OtherCar1Wheels"
+  images {
+    image: "/assets/images/background_images/Car2/OtherCar1Wheel.png"
+  }
+  images {
+    image: "/assets/images/background_images/Car2/OtherCar1Wheel2.png"
+  }
+  images {
+    image: "/assets/images/background_images/Car2/OtherCar1Wheel3.png"
+  }
+  images {
+    image: "/assets/images/background_images/Car2/OtherCar1Wheel4.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 60
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+margin: 0
+extrude_borders: 0
+inner_padding: 0

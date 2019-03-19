@@ -161,7 +161,7 @@ instances {
 }
 instances {
   id: "OtherCars"
-  prototype: "/GameScreen/OtherCars.go"
+  prototype: "/GameScreen/Other Cars/OtherCars.go"
   position {
     x: 1146.0
     y: 167.0
