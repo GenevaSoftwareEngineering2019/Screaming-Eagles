@@ -52,8 +52,7 @@ rand = math.random(100)
 	if rand < 50 then
 		bIsCorrect1 = true
 		bIsCorrect2 = false
-		local using1 = ind1
-		--pickedPhono1 = "Selection#" .. ind1
+		pickedPhono = "Selection#" .. ind1
 		if self.active == true then
 			msg.post(pickedPhono1, "play_sound", {delay = 0, gain = 0.5})
 		end
@@ -62,7 +61,7 @@ rand = math.random(100)
 		bIscorrect1 = false
 		bIsCorrect2 = true
 		local using2 = ind2
-		--pickedPhono = "Selection#" .. ind2 
+		pickedPhono = "Selection#" .. ind2
 		if self.active == true then
 			msg.post(pickedPhono2, "play_sound", {delay = 0, gain = 0.5})
 		end
@@ -97,9 +96,10 @@ function on_input(self, action_id, action)
 if action_id == hash("click") and action.pressed and self.active then
 	local Phono1 = gui.get_node("Phono1")
 	local Phono2 = gui.get_node("Phono2")
-	local sound_Button = gui.get_node("SoundButton")
-	if gui.pick_node(sound_Button, action.x, action.y) then
-		msg.post(pickedPhono, "play_sound", {delay = 1, gain = 0.5})
+	local SoundButton = gui.get_node("SoundButton")
+	if gui.pick_node(SoundButton, action.x, action.y) then
+		msg.post(pickedPhono, "play_sound", {delay = 0, gain = 0.5})
+		
 	end
 	if gui.pick_node(Phono1, action.x, action.y) then
 		msg.post("#", "hide_Selection")
