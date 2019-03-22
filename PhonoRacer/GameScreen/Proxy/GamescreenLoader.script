@@ -23,6 +23,10 @@ function on_message(self, message_id, message, sender)
 		msg.post("#Level1Proxy", "set_time_step", {factor = 0.000001, mode = 0})
 	elseif message_id == hash("Resume") then
 		msg.post("#Level1Proxy", "set_time_step", {factor = 1, mode = 0})
+	elseif message_id == hash("disable") then
+		msg.post("#Level1Proxy", "disable")
+	elseif message_id == hash ("unload") then
+		msg.post("#Level1Proxy", "unload")
 	end
 end
 

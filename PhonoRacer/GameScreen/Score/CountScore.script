@@ -1,4 +1,5 @@
 i = 0
+s = 0
 
 function init(self)
 	
@@ -20,5 +21,10 @@ function on_message(self, message_id, message, sender)
 			go.delete()
 			msg.post("EndScreen#EndScreen", "show_EndScreen")
 		end
+	end
+
+	if message_id == hash("Correct") then
+		s = s + 1
+		return s
 	end
 end
