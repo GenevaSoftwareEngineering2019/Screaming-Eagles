@@ -2,7 +2,7 @@ function init(self)
 	msg.post(".", "acquire_input_focus")
 	msg.post("#", "hide_Selection")
 	self.active = false
-	pickedPhono = ""
+	pickedPhonoSound = ""
 end
 
 function on_message(self, message_id, message, sender)
@@ -30,7 +30,6 @@ function on_message(self, message_id, message, sender)
 		pickedPhono1 = "Selection#" .. ind1
 		gui.set_text(Phono2, phonograms[ind2])
 		pickedPhono2 = "Selection#" .. ind2
-		local letters = {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70"} 
 		print(phonograms[ind1])
 	elseif message_id == hash("hide_Selection") then
 		msg.post("#", "disable")
@@ -51,7 +50,7 @@ rand = math.random(100)
 	if rand < 50 then
 		bIsCorrect1 = true
 		bIsCorrect2 = false
-		pickedPhono = "Selection#" .. ind1
+		pickedPhonoSound = "Selection#" .. ind1
 		if self.active == true then
 			msg.post(pickedPhono1, "play_sound", {delay = 0, gain = 0.5})
 		end
@@ -60,7 +59,7 @@ rand = math.random(100)
 		bIscorrect1 = false
 		bIsCorrect2 = true
 		local using2 = ind2
-		pickedPhono = "Selection#" .. ind2
+		pickedPhonoSound = "Selection#" .. ind2
 		if self.active == true then
 			msg.post(pickedPhono2, "play_sound", {delay = 0, gain = 0.5})
 		end
@@ -97,8 +96,7 @@ if action_id == hash("click") and action.pressed and self.active then
 	local Phono2 = gui.get_node("Phono2")
 	local SoundButton = gui.get_node("SoundButton")
 	if gui.pick_node(SoundButton, action.x, action.y) then
-		msg.post(pickedPhono, "play_sound", {delay = 0, gain = 0.5})
-		
+		msg.post(pickedPhonoSound, "play_sound", {delay = 0, gain = 0.5})	
 	end
 	if gui.pick_node(Phono1, action.x, action.y) then
 		msg.post("#", "hide_Selection")
