@@ -316,7 +316,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "Level_Select/background"
+  texture: "Level_Select/KGrade"
   id: "background"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE

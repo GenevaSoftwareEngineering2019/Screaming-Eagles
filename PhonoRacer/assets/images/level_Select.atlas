@@ -16,6 +16,12 @@ images {
 images {
   image: "/assets/images/Level_Select Images/background.jpg"
 }
+images {
+  image: "/assets/images/Level_Select Images/1Grade.jpg"
+}
+images {
+  image: "/assets/images/Level_Select Images/KGrade.jpg"
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 0
