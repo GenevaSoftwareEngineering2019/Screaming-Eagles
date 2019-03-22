@@ -3,6 +3,7 @@ function init(self)
 	msg.post("#", "hide_Selection")
 	self.active = false
 	pickedPhonoSound = ""
+	pickedPhonoValue = ""
 end
 
 function on_message(self, message_id, message, sender)
@@ -51,6 +52,7 @@ rand = math.random(100)
 		bIsCorrect1 = true
 		bIsCorrect2 = false
 		pickedPhonoSound = "Selection#" .. ind1
+		pickedPhonoValue = ind1
 		if self.active == true then
 			msg.post(pickedPhono1, "play_sound", {delay = 0, gain = 0.5})
 		end
@@ -60,6 +62,7 @@ rand = math.random(100)
 		bIsCorrect2 = true
 		local using2 = ind2
 		pickedPhonoSound = "Selection#" .. ind2
+		pickedPhonoValue = ind2
 		if self.active == true then
 			msg.post(pickedPhono2, "play_sound", {delay = 0, gain = 0.5})
 		end
