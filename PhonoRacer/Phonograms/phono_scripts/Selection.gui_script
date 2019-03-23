@@ -4,9 +4,13 @@ function init(self)
 	self.active = false
 	pickedPhonoSound = ""
 	pickedPhonoValue = ""
+	IsActive = self.active
 end
 
 function on_message(self, message_id, message, sender)
+	if self.active == true then
+		msg.post(".", "acquire_input_focus")
+	end
 	if message_id == hash("show_Selection") then
 		msg.post("#", "enable")
 		self.active = true
@@ -56,7 +60,6 @@ rand = math.random(100)
 		if self.active == true then
 			msg.post(pickedPhono1, "play_sound", {delay = 0, gain = 0.5})
 		end
-		--pickedSound = "Selection#" letters[ Phono1 ]
 	else
 		bIscorrect1 = false
 		bIsCorrect2 = true
@@ -66,7 +69,6 @@ rand = math.random(100)
 		if self.active == true then
 			msg.post(pickedPhono2, "play_sound", {delay = 0, gain = 0.5})
 		end
-		--pickedSound = "Selection#" letters[ Phono2 ]
 	end
 end
 --This depreciated method is something I am working on long term as a solution
