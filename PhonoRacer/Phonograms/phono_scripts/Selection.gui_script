@@ -9,6 +9,7 @@ function init(self)
 	-- probably redundant but needed for working
 	bIsCorrectGlobal1 = false
 	bIsCorrectGlobal2 = false
+	Session = {}
 end
 
 function on_message(self, message_id, message, sender)
@@ -42,7 +43,8 @@ function on_message(self, message_id, message, sender)
 		pickedPhono1 = "Selection#" .. ind1
 		gui.set_text(Phono2, phonograms[ind2])
 		pickedPhono2 = "Selection#" .. ind2
-		print(phonograms[ind1])
+		table.insert(Session, phonograms[ind1])
+		table.insert(Session, phonograms[ind2])
 	
 	elseif message_id == hash("hide_Selection") then
 		msg.post("#", "disable")
