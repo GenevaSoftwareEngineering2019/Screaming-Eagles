@@ -23,12 +23,8 @@ function on_message(self, message_id, message, sender)
 	elseif message_id == hash("hide_HelpScreen") then
 		msg.post("#", "disable")
 		self.active = false
-		IsActive = go.get("Selection#Selection", "IsActive")
-		if IsActive == true then
-			msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
-		else
-			msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
-		end
+		msg.post("Selection#Selection", "check_Active")
+		
 	end
 end
 
