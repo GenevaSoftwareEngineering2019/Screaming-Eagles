@@ -13,9 +13,11 @@ function init(self)
 end
 
 function on_message(self, message_id, message, sender)
-	if self.active == true then
+	--[[if self.active == true then
 		msg.post(".", "acquire_input_focus")
-	end
+	end]]--
+	ind1 = 0;
+	ind2 = 0; 
 	if message_id == hash("show_Selection") then
 		msg.post("#", "enable")
 		self.active = true
