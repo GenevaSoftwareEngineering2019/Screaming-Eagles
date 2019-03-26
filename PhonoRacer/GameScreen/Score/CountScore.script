@@ -14,7 +14,6 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("Count") then
 		if i <= 3 then
 			i = i + 1
-			print (i)
 			msg.post("OtherCars#CollisionTrigger", "Reset")
 			return i
 		elseif i >= 4 then
