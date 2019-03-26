@@ -90,32 +90,6 @@ end
 bIsCorrectGlobal1 = bIsCorrect1
 bIsCorrectGlobal2 = bIsCorrect2
 
-
---This depreciated method is something I am working on long term as a solution
---to the retrieving results issue. 
---[[	if action_id == hash("click") and action.pressed and self.active then
-local Phono1 = gui.get_node("Phono1")
-local Phono2 = gui.get_node("Phono2")
-if gui.pick_node(Phono1, action.x, action.y) then
---			if Phono1.Text = pickedSound then
---then
-msg.post("Selection#Congratulations", "play_sound", {delay = 0, gain = 0.5})
-msg.post("#", "hide_Selection")
---elseif 
---msg.post("Selection#Bettter luck next time", "play_sound", {delay = 0, gain = 0.5})
---	msg.post("#", "hide_Selection")
---end
-elseif gui.pick_node(Phono2, action.x, action.y) then
---if Phono2.Text = pickedSound
---			-then
-msg.post("Selection#Congratulations", "play_sound", {delay = 0, gain = 0.5})
-msg.post("#", "hide_Selection")
---elseif 
---msg.post("Selection#Bettter luck next time", "play_sound", {delay = 0, gain = 0.5})
---msg.post("#", "hide_Selection")
---end
-end ]]--
-
 function on_input(self, action_id, action)
 if action_id == hash("click") and action.pressed and self.active then
 	local Phono1 = gui.get_node("Phono1")
@@ -129,12 +103,14 @@ if action_id == hash("click") and action.pressed and self.active then
 	if gui.pick_node(Phono1, action.x, action.y) then
 		-- check if correct answer
 		if bIsCorrect1 == true then
+			msg.post("Selection#Congratulations", "play_sound", {delay = 0, gain = 0.5})
 			iPlayerScore = iPlayerScore + 1
 			print(iPlayerScore)
 			table.insert(Correct, phonograms[ind1])
 			table.insert(Picked, phonograms[ind1])
 			-- play correct sound
-		elseif bIsCorrect1 == false then
+		elseif bIsCorrect2 == true then
+			msg.post("Selection#Better", "play_sound", {delay = 0, gain = 0.5})
 			print(iPlayerScore)
 			table.insert(Picked, phonograms[ind1])
 			table.insert(Correct, phonograms[ind2])
@@ -145,13 +121,15 @@ if action_id == hash("click") and action.pressed and self.active then
 	-- if right node selecte
 	elseif gui.pick_node(Phono2, action.x, action.y) then
 		if bIsCorrect2 == true then
+			msg.post("Selection#Congratulations", "play_sound", {delay = 0, gain = 0.5})
 			iPlayerScore = iPlayerScore + 1
 			print(iPlayerScore)
 			table.insert(Correct, phonograms[ind2])
 			table.insert(Picked, phonograms[ind2])
 			-- play correct sound
 			--msg.post(play_sound, )
-		elseif bIsCorrect2 == false then
+		elseif bIsCorrect1 == true then
+			msg.post("Selection#Better", "play_sound", {delay = 0, gain = 0.5})
 			table.insert(Picked, phonograms[ind2])
 			table.insert(Correct, phonograms[ind1])
 			-- play incorrect sound
