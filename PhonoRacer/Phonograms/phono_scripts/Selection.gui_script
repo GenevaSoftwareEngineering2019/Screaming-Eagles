@@ -10,6 +10,8 @@ function init(self)
 	bIsCorrectGlobal1 = false
 	bIsCorrectGlobal2 = false
 	Session = {}
+	Picked = {}
+	Correct = {}
 end
 
 function on_message(self, message_id, message, sender)
@@ -43,6 +45,8 @@ function on_message(self, message_id, message, sender)
 		pickedPhono1 = "Selection#" .. ind1
 		gui.set_text(Phono2, phonograms[ind2])
 		pickedPhono2 = "Selection#" .. ind2
+
+		--add phonograms to Session table for use in endscreen
 		table.insert(Session, phonograms[ind1])
 		table.insert(Session, phonograms[ind2])
 	
@@ -120,9 +124,13 @@ if action_id == hash("click") and action.pressed and self.active then
 		if bIsCorrect1 == true then
 			iPlayerScore = iPlayerScore + 1
 			print(iPlayerScore)
+			table.insert(Correct, phonograms[ind1])
+			table.insert(Picked, phonograms[ind1])
 			-- play correct sound
 		elseif bIsCorrect1 == false then
 			print(iPlayerScore)
+			table.insert(Picked, phonograms[ind1])
+			table.insert(Correct, phonograms[ind2])
 			-- play incorrect sound
 		end 
 		msg.post("#", "hide_Selection")
@@ -132,9 +140,13 @@ if action_id == hash("click") and action.pressed and self.active then
 		if bIsCorrect2 == true then
 			iPlayerScore = iPlayerScore + 1
 			print(iPlayerScore)
+			table.insert(Correct, phonograms[ind2])
+			table.insert(Picked, phonograms[ind2])
 			-- play correct sound
 			--msg.post(play_sound, )
 		elseif bIsCorrect2 == false then
+			table.insert(Picked, phonograms[ind2])
+			table.insert(Correct, phonograms[ind1])
 			-- play incorrect sound
 			print(iPlayerScore)
 		end
