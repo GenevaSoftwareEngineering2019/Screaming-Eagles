@@ -179,7 +179,7 @@ components {
   }
 }
 components {
-  id: "Bettter luck next time"
+  id: "Better"
   component: "/assets/Audio/Better.ogg"
   position {
     x: 0.0
