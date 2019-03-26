@@ -18,6 +18,11 @@ function on_message(self, message_id, message, sender)
 	end]]--
 	ind1 = 0;
 	ind2 = 0; 
+	if message_id == hash("check_Active") then
+		if self.active == false then
+			msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
+		end
+	end
 	if message_id == hash("show_Selection") then
 		msg.post("#", "enable")
 		self.active = true
