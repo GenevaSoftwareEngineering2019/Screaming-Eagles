@@ -1,6 +1,6 @@
 function init(self)
 	msg.post("#", "show_start")
-	msg.post("#music", "play_sound")
+	msg.post("#music", "play_sound") 
 	self.active = false
 end
 
@@ -21,6 +21,7 @@ function on_message(self, message_id, message, sender)
 			local exit = gui.get_node("exit")
 			if gui.pick_node(start, action.x, action.y) then
 				msg.post("#", "hide_start")
+				msg.post("#EngineRev", "play_sound", {delay = 0, gain = 10})
 				msg.post("#grade_select", "show_grade_select")
 			elseif gui.pick_node(achievements, action.x, action.y) then
 				msg.post("#", "hide_start")
