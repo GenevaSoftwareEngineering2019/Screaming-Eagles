@@ -12,6 +12,10 @@ function init(self)
 	Session = {}
 	Picked = {}
 	Correct = {}
+
+	phonogram1 = 0
+	phonogram2 = 0
+	
 end
 
 function on_message(self, message_id, message, sender)
@@ -56,6 +60,10 @@ function on_message(self, message_id, message, sender)
 		--add phonograms to Session table for use in endscreen
 		table.insert(Session, phonograms[ind1])
 		table.insert(Session, phonograms[ind2])
+
+		--set text equal to variable so other pieces of code can use it that can't see the ind1 & ind2 script
+		phonogram1 = phonograms[ind1]
+		phonogram2 = phonograms[ind2]
 	
 	elseif message_id == hash("hide_Selection") then
 		msg.post("#", "disable")
@@ -106,14 +114,17 @@ if action_id == hash("click") and action.pressed and self.active then
 			msg.post("Selection#Congratulations", "play_sound", {delay = 0, gain = 0.5})
 			iPlayerScore = iPlayerScore + 1
 			print(iPlayerScore)
-			table.insert(Correct, phonograms[ind1])
-			table.insert(Picked, phonograms[ind1])
+			--add picked and correct answers to coresponding tables
+			table.insert(Correct, phonogram1)
+			table.insert(Picked, phonogram1)
+			--table.insert(Picked, 32)
 			-- play correct sound
 		elseif bIsCorrect2 == true then
 			msg.post("Selection#Better", "play_sound", {delay = 0, gain = 0.5})
 			print(iPlayerScore)
-			table.insert(Picked, phonograms[ind1])
-			table.insert(Correct, phonograms[ind2])
+			--add picked and correct answers to coresponding tables
+			table.insert(Picked, phonogram1)
+			table.insert(Correct, phonogram2)
 			-- play incorrect sound
 		end 
 		msg.post("#", "hide_Selection")
@@ -124,14 +135,16 @@ if action_id == hash("click") and action.pressed and self.active then
 			msg.post("Selection#Congratulations", "play_sound", {delay = 0, gain = 0.5})
 			iPlayerScore = iPlayerScore + 1
 			print(iPlayerScore)
-			table.insert(Correct, phonograms[ind2])
-			table.insert(Picked, phonograms[ind2])
+			--add picked and correct answers to coresponding tables
+			table.insert(Correct, phonogram2)
+			table.insert(Picked, phonogram2)
 			-- play correct sound
 			--msg.post(play_sound, )
 		elseif bIsCorrect1 == true then
 			msg.post("Selection#Better", "play_sound", {delay = 0, gain = 0.5})
-			table.insert(Picked, phonograms[ind2])
-			table.insert(Correct, phonograms[ind1])
+			--add picked and correct answers to coresponding tables
+			table.insert(Picked, phonogram2)
+			table.insert(Correct, phonogram1)
 			-- play incorrect sound
 			print(iPlayerScore)
 		end
