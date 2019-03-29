@@ -1,12 +1,16 @@
 local speed = -500
-i = 0
+c = 0
 
 function update(self, dt)
 	p = go.get_position()
 	p.x = p.x + speed * dt
 	go.set_position(p)
 	if p.x <= -300 then
-		msg.post("Score#CountScore", "Count")
+		if c <= 4 then
+			msg.post("Score#CountScore", "Count")
+		elseif c == 5 then
+			msg.post("#", "unload")
+		end
 	end
 end
 
@@ -21,5 +25,7 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("Reset") then
 		p.x = 2000
 		go.set_position(p)
+		c = c + 1
+		return c
 	end
 end
