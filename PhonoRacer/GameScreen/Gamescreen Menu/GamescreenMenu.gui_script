@@ -21,7 +21,7 @@ function on_message(self, message_id, message, sender)
 	elseif message_id == hash("hide_GamescreenMenu") then
 		msg.post("#", "disable")
 		self.active = false
-		msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
+		msg.post("Selection#Selection", "check_Active")
 	end
 end
 
