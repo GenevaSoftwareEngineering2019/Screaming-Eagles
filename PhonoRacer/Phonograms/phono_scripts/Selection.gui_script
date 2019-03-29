@@ -111,7 +111,7 @@ if action_id == hash("click") and action.pressed and self.active then
 	if gui.pick_node(Phono1, action.x, action.y) then
 		-- check if correct answer
 		if bIsCorrect1 == true then
-			msg.post("Selection#Congratulations", "play_sound", {delay = 0, gain = 0.5})
+			msg.post("Selection#Congratulations", "play_sound", {delay = 0.2, gain = 0.5})
 			iPlayerScore = iPlayerScore + 1
 			print(iPlayerScore)
 			--add picked and correct answers to coresponding tables
@@ -120,7 +120,7 @@ if action_id == hash("click") and action.pressed and self.active then
 			--table.insert(Picked, 32)
 			-- play correct sound
 		elseif bIsCorrect2 == true then
-			msg.post("Selection#Better", "play_sound", {delay = 0, gain = 0.5})
+			msg.post("Selection#Better", "play_sound", {delay = 0.2, gain = 0.5})
 			print(iPlayerScore)
 			--add picked and correct answers to coresponding tables
 			table.insert(Picked, phonogram1)
@@ -132,7 +132,7 @@ if action_id == hash("click") and action.pressed and self.active then
 	-- if right node selecte
 	elseif gui.pick_node(Phono2, action.x, action.y) then
 		if bIsCorrect2 == true then
-			msg.post("Selection#Congratulations", "play_sound", {delay = 0, gain = 0.5})
+			msg.post("Selection#Congratulations", "play_sound", {delay = 0.2, gain = 0.5})
 			iPlayerScore = iPlayerScore + 1
 			print(iPlayerScore)
 			--add picked and correct answers to coresponding tables
@@ -141,7 +141,7 @@ if action_id == hash("click") and action.pressed and self.active then
 			-- play correct sound
 			--msg.post(play_sound, )
 		elseif bIsCorrect1 == true then
-			msg.post("Selection#Better", "play_sound", {delay = 0, gain = 0.5})
+			msg.post("Selection#Better", "play_sound", {delay = 0.2, gain = 0.5})
 			--add picked and correct answers to coresponding tables
 			table.insert(Picked, phonogram2)
 			table.insert(Correct, phonogram1)
