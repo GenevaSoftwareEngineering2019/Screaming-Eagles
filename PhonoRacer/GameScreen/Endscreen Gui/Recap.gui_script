@@ -1,0 +1,33 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	msg.post("#", "hide_RecapScreen")
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("show_RecapScreen") then
+		msg.post("#", "enable")
+		self.active = true
+		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
+
+		--[[Question 1
+		local Question1Left = gui.get_node("Q1L")
+		gui.set_text(Question1Left, Session[1])
+		local Question1Right = gui.get_node("Q1R")
+		gui.set_text(Question1Right, Session[2])]]
+
+
+	elseif message_id == hash("hide_RecapScreen") then
+		msg.post("#", "disable")
+		self.active = false
+	end
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
