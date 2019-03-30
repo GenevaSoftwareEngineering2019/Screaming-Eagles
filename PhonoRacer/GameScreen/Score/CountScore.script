@@ -19,14 +19,12 @@ function on_message(self, message_id, message, sender)
 		elseif i >= 4 then
 			go.delete()
 			msg.post("EndScreen#EndScreen", "show_EndScreen")
-			--table.foreachi(Session, print)
-			table.foreachi(Picked, print)
-			table.foreachi(Correct, print)
+		end
+		
+		if Picked[1] == Correct[1] then
+			print(50)
+			
 		end
 	end
 
-	if message_id == hash("Correct") then
-		s = s + 1
-		return s
-	end
 end
