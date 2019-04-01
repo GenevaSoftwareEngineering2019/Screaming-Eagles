@@ -9,11 +9,13 @@ function on_message(self, message_id, message, sender)
 		self.active = true
 		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
 
+		print(Session[1])
+		
 		--Question 1
 		local Q1Left = gui.get_node("Q1Left")
-		gui.set_text(Question1Left, Session[1])
+		gui.set_text(Q1Left, Session[1])
 		local Q1Right = gui.get_node("Q1Right")
-		gui.set_text(Question1Right, Session[2])
+		gui.set_text(Q1Right, Session[2])
 
 
 	elseif message_id == hash("hide_RecapScreen") then
