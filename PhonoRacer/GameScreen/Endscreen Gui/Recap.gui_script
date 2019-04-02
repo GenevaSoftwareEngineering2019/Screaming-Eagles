@@ -9,14 +9,58 @@ function on_message(self, message_id, message, sender)
 		self.active = true
 		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
 
-		print(Session[1])
+
 		
-		--Question 1
+		--Linking Session's phonograms to nodes
 		local Q1Left = gui.get_node("Q1Left")
 		gui.set_text(Q1Left, Session[1])
 		local Q1Right = gui.get_node("Q1Right")
 		gui.set_text(Q1Right, Session[2])
 
+		local Q2Left = gui.get_node("Q2Left")
+		gui.set_text(Q2Left, Session[3])
+		local Q2Right = gui.get_node("Q2Right")
+		gui.set_text(Q2Right, Session[4])
+
+		local Q3Left = gui.get_node("Q3Left")
+		gui.set_text(Q3Left, Session[5])
+		local Q3Right = gui.get_node("Q3Right")
+		gui.set_text(Q3Right, Session[6])
+
+		local Q4Left = gui.get_node("Q4Left")
+		gui.set_text(Q4Left, Session[7])
+		local Q4Right = gui.get_node("Q4Right")
+		gui.set_text(Q4Right, Session[8])
+
+		local Q5Left = gui.get_node("Q5Left")
+		gui.set_text(Q5Left, Session[9])
+		local Q5Right = gui.get_node("Q5Right")
+		gui.set_text(Q5Right, Session[10])
+
+		local Q6Left = gui.get_node("Q6Left")
+		gui.set_text(Q6Left, Session[11])
+		local Q6Right = gui.get_node("Q6Right")
+		gui.set_text(Q6Right, Session[12])
+
+		local Q7Left = gui.get_node("Q7Left")
+		gui.set_text(Q7Left, Session[13])
+		local Q7Right = gui.get_node("Q7Right")
+		gui.set_text(Q7Right, Session[14])
+
+		local Q8Left = gui.get_node("Q8Left")
+		gui.set_text(Q8Left, Session[15])
+		local Q8Right = gui.get_node("Q8Right")
+		gui.set_text(Q8Right, Session[16])
+
+		local Q9Left = gui.get_node("Q9Left")
+		gui.set_text(Q9Left, Session[17])
+		local Q9Right = gui.get_node("Q9Right")
+		gui.set_text(Q9Right, Session[18])
+
+		local Q10Left = gui.get_node("Q10Left")
+		gui.set_text(Q10Left, Session[19])
+		local Q10Right = gui.get_node("Q10Right")
+		gui.set_text(Q10Right, Session[20])
 
 	elseif message_id == hash("hide_RecapScreen") then
 		msg.post("#", "disable")
