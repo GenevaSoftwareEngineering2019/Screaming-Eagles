@@ -19,11 +19,12 @@ function on_message(self, message_id, message, sender)
 		self.active = true
 		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
 
-		--Question 1
+		--[[Question 1
 		local Question1Left = gui.get_node("Q1L")
 		gui.set_text(Question1Left, Session[1])
 		local Question1Right = gui.get_node("Q1R")
-		gui.set_text(Question1Right, Session[2])
+		gui.set_text(Question1Right, Session[2])]]
+		
 		
 	elseif message_id == hash("hide_EndScreen") then
 		msg.post("#", "disable")
@@ -39,9 +40,7 @@ function on_input(self, action_id, action)
 	if action_id == hash("click") and action.pressed then
 		local Return = gui.get_node("Return")
 		if gui.pick_node(Return, action.x, action.y) then
-			msg.post("default:/guis#start", "show_start")
-			msg.post("default:/GamescreenProxy#GamescreenLoader", "disable")
-			msg.post("default:/GamescreenProxy#GamescreenLoader", "unload")
+			msg.post("Recap#Recap", "show_RecapScreen")
 		end
 	end
 end
