@@ -22,16 +22,6 @@ end
 function on_message(self, message_id, message, sender)
 	ind1 = 0;
 	ind2 = 0; 
-	if message_id == hash("KindergardenStart") then
-		total = 33
-		phonograms = {"a", "b", "c", "d", "e", "ear", "ee", "er", "f", "g", "h", "i", "ir", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "th", "u", "ur", "v", "w", "wor", "x", "y", "z" }
-	end
-	if message_id == hash("FirstGradeStart") then
-		--The lines of code that these two lines duplicate in the main body of code 
-		--will need to be deleted once the seperate level proxies of support.
-		total = 70
-		phonograms = {"a", "ai", "ar", "au", "aw", "ay", "b", "c", "ch", "ci", "ck", "d", "dge", "e", "ea", "ear", "ed", "ee", "ei", "eigh", "er", "eu", "ew", "ey", "f", "g", "gn", "h", "i", "ie", "igh", "ir", "j", "k", "kn", "l", "m", "n", "ng", "o", "oa", "oe", "oi", "oo", "or", "ou", "ough", "ow", "oy", "p", "ph", "qu", "r", "s", "sh", "si", "t", "tch", "th", "ti", "u", "ui", "ur", "v", "w", "wh", "wor", "wr", "x", "y", "z" }
-	end
 	if message_id == hash("check_Active") then
 		if self.active == false then
 			msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
