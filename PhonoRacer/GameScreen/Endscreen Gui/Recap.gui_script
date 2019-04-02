@@ -17,6 +17,20 @@ function on_message(self, message_id, message, sender)
 		local Q1Right = gui.get_node("Q1Right")
 		gui.set_text(Q1Right, Session[2])
 
+		if Picked[1] == Session[1] then
+			if Picked[1] == Correct[1] then
+				gui.set_color(Q1Left, vmath.vector3(0, .5, 0))
+			else
+				gui.set_color(Q1Left, vmath.vector3(1, 0, 0))
+			end
+		elseif Picked[1] == Session[2] then
+			if Picked[1] == Correct[1] then
+				gui.set_color(Q1Right, vmath.vector3(0, .5, 0))
+			else
+				gui.set_color(Q1Right, vmath.vector3(1, 0, 0))
+			end
+		end
+
 		local Q2Left = gui.get_node("Q2Left")
 		gui.set_text(Q2Left, Session[3])
 		local Q2Right = gui.get_node("Q2Right")
