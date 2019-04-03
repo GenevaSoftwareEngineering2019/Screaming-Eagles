@@ -17,13 +17,7 @@ function on_message(self, message_id, message, sender)
 			msg.post("OtherCars#CollisionTrigger", "Reset")
 			return i
 		elseif i >= 4 then
-			go.delete()
 			msg.post("EndScreen#EndScreen", "show_EndScreen")
-		end
-		
-		if Picked[1] == Correct[1] then
-			print(50)
-			
 		end
 	end
 
