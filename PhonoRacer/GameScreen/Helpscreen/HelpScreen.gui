@@ -46,7 +46,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "HelpScreenGui/videohelpscreen"
+  texture: "HelpScreenGui/helpscreenText"
   id: "Background"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
