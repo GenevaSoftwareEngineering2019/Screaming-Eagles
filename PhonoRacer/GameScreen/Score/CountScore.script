@@ -14,18 +14,17 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("Count") then
 		if i <= 3 then
 			i = i + 1
-			print (i)
 			msg.post("OtherCars#CollisionTrigger", "Reset")
 			return i
 		elseif i >= 4 then
 			go.delete()
 			msg.post("EndScreen#EndScreen", "show_EndScreen")
-			table.foreachi(Session, print)
+		end
+		
+		if Picked[1] == Correct[1] then
+			print(50)
+			
 		end
 	end
 
-	if message_id == hash("Correct") then
-		s = s + 1
-		return s
-	end
 end

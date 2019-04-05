@@ -1,5 +1,8 @@
 images {
-  image: "/assets/images/EndScreen.png"
+  image: "/assets/images/scorescreen.png"
+}
+images {
+  image: "/assets/images/EndScreen2.png"
 }
 margin: 0
 extrude_borders: 0
