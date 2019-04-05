@@ -14,7 +14,6 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("loadK1") then
-		print(1)
 		msg.post("#Level1Proxy", "load")
 	elseif message_id == hash("proxy_loaded") then
 		msg.post(sender, "init")
