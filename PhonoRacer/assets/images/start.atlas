@@ -20,10 +20,10 @@ images {
   image: "/assets/images/Home Images/TitleMenuCar.png"
 }
 images {
-  image: "/assets/images/Home Images/AchieveButtonV2.png"
+  image: "/assets/images/Home Images/AwardButton.png"
 }
 images {
-  image: "/assets/images/Home Images/phonoracerlogo.png"
+  image: "/assets/images/Home Images/TitleBack.jpg"
 }
 margin: 0
 extrude_borders: 0

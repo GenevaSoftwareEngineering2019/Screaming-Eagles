@@ -5,7 +5,7 @@ fonts {
 }
 textures {
   name: "achievements"
-  texture: "/assets/images/achievements.atlas"
+  texture: "/assets/images/Achievement Images/achievements.atlas"
 }
 background_color {
   x: 0.0
@@ -15,8 +15,8 @@ background_color {
 }
 nodes {
   position {
-    x: 639.0
-    y: 316.0
+    x: 623.0
+    y: 263.0
     z: 0.0
     w: 1.0
   }
