@@ -4,6 +4,9 @@ images {
 images {
   image: "/assets/images/EndScreen2.png"
 }
+images {
+  image: "/assets/images/RecapButton.png"
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 0
