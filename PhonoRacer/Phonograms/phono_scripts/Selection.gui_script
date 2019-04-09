@@ -22,7 +22,7 @@ end
 function on_message(self, message_id, message, sender)
 	ind1 = 0;
 	ind2 = 0; 
-	if message_id == hash("KindergardenStart") then
+	--[[if message_id == hash("KindergardenStart") then
 		total = 33
 		phonograms = {"a", "b", "c", "d", "e", "ear", "ee", "er", "f", "g", "h", "i", "ir", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "th", "u", "ur", "v", "w", "wor", "x", "y", "z" }
 		print(42)
@@ -32,7 +32,7 @@ function on_message(self, message_id, message, sender)
 		--will need to be deleted once the seperate level proxies of support.
 		total = 71
 		phonograms = {"a", "ai", "ar", "au", "aw", "ay", "b", "c", "ch", "ci", "ck", "d", "dge", "e", "ea", "ear", "ed", "ee", "ei", "eigh", "er", "eu", "ew", "ey", "f", "g", "gn", "h", "i", "ie", "igh", "ir", "j", "k", "kn", "l", "m", "n", "ng", "o", "oa", "oe", "oi", "oo", "or", "ou", "ough", "ow", "oy", "p", "ph", "qu", "r", "s", "sh", "si", "t", "tch", "th", "ti", "u", "ui", "ur", "v", "w", "wh", "wor", "wr", "x", "y", "z" }
-	end
+	end]]--
 	if message_id == hash("check_Active") then
 		if self.active == false then
 			msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
@@ -48,7 +48,7 @@ function on_message(self, message_id, message, sender)
 		-- set int2 random to n/2+1 - total
 		-- total is the number of values to select from, beginning at 1
 		-- randomseed needs to be called twice for two different numbers
-		--total = 71
+		total = 71
 		total2 = total - 1
 		n1 = total2 / 2
 		n2 = n1 + 1
@@ -60,7 +60,7 @@ function on_message(self, message_id, message, sender)
 		-- feed ind1 and ind2 to either collection factory or phontab table, or print to text
 		local Phono1 = gui.get_node("text1")
 		local Phono2 = gui.get_node("text2")
-		--phonograms = {"a", "ai", "ar", "au", "aw", "ay", "b", "c", "ch", "ci", "ck", "d", "dge", "e", "ea", "ear", "ed", "ee", "ei", "eigh", "er", "eu", "ew", "ey", "f", "g", "gn", "h", "i", "ie", "igh", "ir", "j", "k", "kn", "l", "m", "n", "ng", "o", "oa", "oe", "oi", "oo", "or", "ou", "ough", "ow", "oy", "p", "ph", "qu", "r", "s", "sh", "si", "t", "tch", "th", "ti", "u", "ui", "ur", "v", "w", "wh", "wor", "wr", "x", "y", "z" }
+		phonograms = {"a", "ai", "ar", "au", "aw", "ay", "b", "c", "ch", "ci", "ck", "d", "dge", "e", "ea", "ear", "ed", "ee", "ei", "eigh", "er", "eu", "ew", "ey", "f", "g", "gn", "h", "i", "ie", "igh", "ir", "j", "k", "kn", "l", "m", "n", "ng", "o", "oa", "oe", "oi", "oo", "or", "ou", "ough", "ow", "oy", "p", "ph", "qu", "r", "s", "sh", "si", "t", "tch", "th", "ti", "u", "ui", "ur", "v", "w", "wh", "wor", "wr", "x", "y", "z" }
 		phonograms2 = {"a", "ai", "ar", "au", "aw", "ay", "b", "c", "ch", "ci", "ck", "d", "dge", "e", "ea", "ear", "ed", "ee", "ei", "eigh", "er", "eu", "ew", "ey", "f", "g", "gn", "h", "i", "ie", "igh", "ir", "j", "k", "kn", "l", "m", "n", "ng", "o", "oa", "oe", "oi", "oo", "or", "ou", "ough", "ow", "oy", "p", "ph", "qu", "r", "s", "sh", "si", "t", "tch", "th", "ti", "u", "ui", "ur", "v", "w", "wh", "wor", "wr", "x", "y", "z" }
 		gui.set_text(Phono1, phonograms[ind1])
 		pickedPhono1 = "Selection#" .. ind1

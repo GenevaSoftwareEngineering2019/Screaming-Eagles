@@ -18,13 +18,15 @@ end
 function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then
 		if message.enter then
-			if level == 0 then 
+			--This code is for level selection, to be used if we make it to that point.. 
+			--[[if level == 0 then 
 				msg.post("Selection", "KindergardenStart")
 				msg.post("Selection", "show_Selection")
 			elseif level == 1 then 
 				msg.post("Selection", "FirstGradeStart")
 				msg.post("Selection", "show_Selection")
-			end
+			end]]--
+			msg.post("Selection", "show_Selection")
 			msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
 		end
 	end
