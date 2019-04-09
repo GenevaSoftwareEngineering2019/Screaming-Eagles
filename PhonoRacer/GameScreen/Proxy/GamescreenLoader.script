@@ -3,12 +3,30 @@ function init(self)
 	self.score = 0
 end
 
+<<<<<<< HEAD
+function on_message(self, message_id, message, sender)
+	if message_id == hash("loadK1") then
+=======
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+end
+
 function on_message(self, message_id, message, sender)
 	if message_id == hash("loadK1") then
 		msg.post("#Level1Proxy", "load")
+	elseif message_id == hash("loadK2") then
+		print(1)
+>>>>>>> 3c1d0bb9c5d93930ebcd104fbffbc059181e0a31
+		msg.post("#Level1Proxy", "load")
+				
 	elseif message_id == hash("proxy_loaded") then
 		msg.post(sender, "init")
 		msg.post(sender, "enable")
+		
 	elseif message_id == hash("Freeze") then
 		msg.post("#Level1Proxy", "set_time_step", {factor = 0.000001, mode = 0})
 	elseif message_id == hash("Resume") then
