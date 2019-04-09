@@ -23,7 +23,7 @@ function on_input(self, action_id, action)
 				msg.post("/GamescreenProxy#GamescreenLoader", "loadK1")
 				msg.post("#", "hide_level_select")
 			elseif gui.pick_node(node2, action.x, action.y) then
-				msg.post("/GamescreenProxy#GamescreenLoader", "loadK1")
+				msg.post("/GamescreenProxy#GamescreenLoader", "loadK2")
 				msg.post("#EngineRev", "play_sound", {delay = 0, gain = 10})
 				msg.post("#", "hide_level_select")
 			elseif gui.pick_node(backls, action.x, action.y) then

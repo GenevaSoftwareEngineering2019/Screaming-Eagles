@@ -1,5 +1,6 @@
 local speed = -500
 c = 0
+level = 0
 
 function update(self, dt)
 	p = go.get_position()
@@ -17,11 +18,22 @@ end
 function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then
 		if message.enter then
-		msg.post("Selection", "show_Selection")
-		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
+			if level == 0 then 
+				msg.post("Selection", "KindergardenStart")
+				msg.post("Selection", "show_Selection")
+			elseif level == 1 then 
+				msg.post("Selection", "FirstGradeStart")
+				msg.post("Selection", "show_Selection")
+			end
+			msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
 		end
 	end
-
+	if message_id == hash("Kindergarden") then
+		level = 1
+	end
+	if message_id == hash("FirstGrade") then
+		level = 2
+	end
 	if message_id == hash("Reset") then
 		p.x = 2000
 		go.set_position(p)
