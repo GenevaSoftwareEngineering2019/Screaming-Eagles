@@ -1,4 +1,4 @@
-script: "/Levels/Selection.gui_script"
+script: "/Phonograms/phono_scripts/Selection.gui_script"
 fonts {
   name: "GeneralUse"
   font: "/assets/Fonts/GeneralUse.font"

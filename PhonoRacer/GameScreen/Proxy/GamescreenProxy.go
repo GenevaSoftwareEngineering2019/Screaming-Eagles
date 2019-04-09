@@ -34,7 +34,7 @@ embedded_components {
 embedded_components {
   id: "Level2Proxy"
   type: "collectionproxy"
-  data: "collection: \"/Phonograms/phono_scripts/Level2.collection\"\n"
+  data: "collection: \"/Levels/Level2.collection\"\n"
   "exclude: false\n"
   ""
   position {
