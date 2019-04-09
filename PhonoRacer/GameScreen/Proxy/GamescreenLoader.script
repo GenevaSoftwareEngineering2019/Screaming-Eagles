@@ -3,6 +3,10 @@ function init(self)
 	self.score = 0
 end
 
+<<<<<<< HEAD
+function on_message(self, message_id, message, sender)
+	if message_id == hash("loadK1") then
+=======
 function final(self)
 	-- Add finalization code here
 	-- Remove this function if not needed
@@ -16,6 +20,7 @@ function on_message(self, message_id, message, sender)
 		msg.post("#Level1Proxy", "load")
 	elseif message_id == hash("loadK2") then
 		print(1)
+>>>>>>> 3c1d0bb9c5d93930ebcd104fbffbc059181e0a31
 		msg.post("#Level1Proxy", "load")
 				
 	elseif message_id == hash("proxy_loaded") then
@@ -31,14 +36,4 @@ function on_message(self, message_id, message, sender)
 	elseif message_id == hash ("unload") then
 		msg.post("#Level1Proxy", "unload")
 	end
-end
-
-function on_input(self, action_id, action)
-	-- Add input-handling code here
-	-- Remove this function if not needed
-end
-
-function on_reload(self)
-	-- Add reload-handling code here
-	-- Remove this function if not needed
 end
