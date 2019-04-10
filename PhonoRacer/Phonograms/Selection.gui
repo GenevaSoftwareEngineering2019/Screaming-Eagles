@@ -17,7 +17,7 @@ nodes {
   position {
     x: 373.0
     y: 335.0
-    z: 0.0
+    z: 0.1
     w: 1.0
   }
   rotation {
@@ -46,7 +46,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "Selection/blank_Stop_Sign"
+  texture: "Selection/Stop_Sign1"
   id: "Phono1"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -71,7 +71,7 @@ nodes {
   position {
     x: 866.0
     y: 339.0
-    z: 0.0
+    z: 0.1
     w: 1.0
   }
   rotation {
@@ -100,7 +100,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "Selection/blank_Stop_Sign"
+  texture: "Selection/Stop_Sign2"
   id: "Phono2"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE

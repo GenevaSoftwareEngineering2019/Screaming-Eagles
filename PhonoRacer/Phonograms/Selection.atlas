@@ -4,6 +4,12 @@ images {
 images {
   image: "/assets/images/blank_Stop_Sign.png"
 }
+images {
+  image: "/assets/images/Stop_Sign1.png"
+}
+images {
+  image: "/assets/images/Stop_Sign2.png"
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 0
