@@ -160,7 +160,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"hssoundbutton\"\n"
   "  type: \"sound\"\n"
-  "  data: \"sound: \\\"/assets/Audio/helpaudio.ogg\\\"\\n"
+  "  data: \"sound: \\\"/assets/Audio/hssoundbutton.ogg\\\"\\n"
   "looping: 0\\n"
   "group: \\\"master\\\"\\n"
   "gain: 1.0\\n"
