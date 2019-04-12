@@ -5,16 +5,6 @@ function init(self)
 	self.active = true
 end
 
-function final(self)
-	-- Add finalization code here
-	-- Remove this function if not needed
-end
-
-function update(self, dt)
-	-- Add update code here
-	-- Remove this function if not needed
-end
-
 function on_message(self, message_id, message, sender)
 	if message_id == hash("show_HelpScreen") then
 		msg.post("#", "enable")
@@ -31,16 +21,8 @@ end
 function on_input(self, action_id, action)
 	if action_id == hash("click") and action.pressed then
 		local BackButton = gui.get_node("BackButton")
-		local hssoundbutton = gui.get_node("hssoundbutton")
 		if gui.pick_node(BackButton, action.x, action.y) then
 			msg.post("#", "hide_HelpScreen")
-		elseif gui.pick_node(hssoundbutton, action.x, action.y) then
-			msg.post("#hssoundbutton", "play_sound")
-		end
 	end
 end
-
-function on_reload(self)
-	-- Add reload-handling code here
-	-- Remove this function if not needed
 end
