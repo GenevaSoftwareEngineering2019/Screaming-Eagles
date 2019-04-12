@@ -2,7 +2,7 @@ images {
   image: "/assets/images/HelpScreenPressed.png"
 }
 images {
-  image: "/assets/images/helpscreenText.jpg"
+  image: "/assets/images/helpscreenText.png"
 }
 margin: 0
 extrude_borders: 0
