@@ -18,6 +18,7 @@ function on_message(self, message_id, message, sender)
 		if action_id == hash("click") and action.pressed and self.active then
 			local start = gui.get_node("start")
 			local achievements = gui.get_node("achievements")
+			local help = gui.get_node("HomeHelpButton")
 			local exit = gui.get_node("exit")
 			if gui.pick_node(start, action.x, action.y) then
 				msg.post("#", "hide_start")
@@ -28,6 +29,8 @@ function on_message(self, message_id, message, sender)
 				msg.post("#achievements", "show_achievements")
 			elseif gui.pick_node(exit, action.x, action.y) then
 				msg.post("@system:" , "exit", {code =0})
+			elseif gui.pick_node(help, action.x, action.y) then --does not work until new help screen gui is made for home screen
+				msg.post("", "show_HelpScreen") --see above
 			end
 		end
 	end 
