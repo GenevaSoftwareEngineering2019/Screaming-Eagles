@@ -12,11 +12,11 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("Count") then
-		if i <= 3 then
+		if i <= 8 then
 			i = i + 1
 			msg.post("OtherCars#CollisionTrigger", "Reset")
 			return i
-		elseif i >= 4 then
+		elseif i >= 9 then
 			msg.post("EndScreen#EndScreen", "show_EndScreen")
 		end
 	end
