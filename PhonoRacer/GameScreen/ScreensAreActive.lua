@@ -5,3 +5,4 @@
 
 HelpScreenActive = false
 MenuScreenActive = false
+EndScreenActive = true

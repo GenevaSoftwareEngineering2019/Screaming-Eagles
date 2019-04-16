@@ -17,7 +17,7 @@ function on_message(self, message_id, message, sender)
 			msg.post("OtherCars#CollisionTrigger", "Reset")
 			return i
 		elseif i >= 9 then
-			msg.post("EndScreen#EndScreen", "show_EndScreen")
+			msg.post("EndScreen#EndScreen", "check_Screen")
 		end
 	end
 

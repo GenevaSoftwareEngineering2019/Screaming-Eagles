@@ -1,9 +1,18 @@
+require "GameScreen.ScreensAreActive"
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	msg.post("#", "hide_EndScreen")
 end
 
 function on_message(self, message_id, message, sender)
+	if message_id ==hash("check_Screen") then
+		if EndScreenActive == false then 
+			msg.post("#", "hide_EndScreen")
+		end
+		if EndScreenActive == true then 
+			msg.post("#", "show_EndScreen")
+		end
+	end
 	if message_id == hash("show_EndScreen") then
 		msg.post("#", "enable")
 		self.active = true
@@ -18,6 +27,7 @@ function on_input(self, action_id, action)
 	if action_id == hash("click") and action.pressed then
 		local Return = gui.get_node("Return")
 		if gui.pick_node(Return, action.x, action.y) then
+			EndScreenActive = false
 			msg.post("Recap#Recap", "show_RecapScreen")
 		end
 	end
