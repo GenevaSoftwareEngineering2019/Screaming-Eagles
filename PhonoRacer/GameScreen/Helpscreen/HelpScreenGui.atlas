@@ -1,11 +1,8 @@
 images {
-  image: "/assets/images/videohelpscreen.jpg"
-}
-images {
   image: "/assets/images/HelpScreenPressed.png"
 }
 images {
-  image: "/assets/images/Achievement Images/Trophy Screen.jpg"
+  image: "/assets/images/helpscreenText.png"
 }
 margin: 0
 extrude_borders: 0

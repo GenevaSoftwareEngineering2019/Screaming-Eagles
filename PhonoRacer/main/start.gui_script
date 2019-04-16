@@ -26,12 +26,15 @@ function on_message(self, message_id, message, sender)
 				msg.post("#grade_select", "show_grade_select")
 			elseif gui.pick_node(achievements, action.x, action.y) then
 				msg.post("#", "hide_start")
+				msg.post("#EngineRev", "play_sound", {delay = 0, gain = 5})
 				msg.post("#achievements", "show_achievements")
 			elseif gui.pick_node(exit, action.x, action.y) then
 				msg.post("@system:" , "exit", {code =0})
 			elseif gui.pick_node(help, action.x, action.y) then --does not work until new help screen gui is made for home screen
-				msg.post("", "show_HelpScreen") --see above
+				msg.post("#", "hide_start") --see above
+				msg.post("#starthelp", "show_starthelp")
 			end
+			
 		end
 	end 
 	
