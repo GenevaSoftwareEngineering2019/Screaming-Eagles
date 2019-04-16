@@ -1,3 +1,4 @@
+require "GameScreen.ScreensAreActive"
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	msg.post("#", "hide_GamescreenMenu")
@@ -7,8 +8,10 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("show_GamescreenMenu") then
 		msg.post("#", "enable")
 		self.active = true
+		MenuScreenActive = true
 		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
 	elseif message_id == hash("hide_GamescreenMenu") then
+		MenuScreenActive = false
 		msg.post("#", "disable")
 		self.active = false
 		msg.post("Selection#Selection", "check_Active")
