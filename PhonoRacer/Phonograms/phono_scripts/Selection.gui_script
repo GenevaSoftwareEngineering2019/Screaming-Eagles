@@ -6,22 +6,19 @@ function init(self)
 	pickedPhonoValue = ""
 	IsActive = self.active
 	iPlayerScore = 0
-	-- probably redundant but needed for working
-	bIsCorrectGlobal1 = false
-	bIsCorrectGlobal2 = false
 	Session = {}
 	Picked = {}
 	Correct = {}
 	phonograms = {}
-	total = 0
+	total = 71
 	phonogram1 = 0
 	phonogram2 = 0
-	
+
 end
 
 function on_message(self, message_id, message, sender)
-	ind1 = 0;
-	ind2 = 0; 
+	--index1 = 0;
+	--index2 = 0; 
 	if message_id == hash("check_Active") then
 		if self.active == false then
 			msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
@@ -31,10 +28,10 @@ function on_message(self, message_id, message, sender)
 		msg.post("#", "enable")
 		self.active = true
 		msg.post(".", "acquire_input_focus")
-
+		
 		--lua tables begin at 1, not 0
-		-- set int1 random to 1 - n/2,
-		-- set int2 random to n/2+1 - total
+		-- set index1 random to 1 - n/2,
+		-- set index2 random to n/2+1 - total
 		-- total is the number of values to select from, beginning at 1
 		-- randomseed needs to be called twice for two different numbers
 		total = 71
@@ -42,60 +39,70 @@ function on_message(self, message_id, message, sender)
 		n1 = total2 / 2
 		n2 = n1 + 1
 		math.randomseed(os.time() * 123456)
-		ind1 = math.random(1, total)
-		math.randomseed(os.clock() * 420)
-		--ind2 = math.random(n2, total)
-		ind2 = math.random(1, total)	
-		-- feed ind1 and ind2 to either collection factory or phontab table, or print to text
+		index1 = math.random(1, n1)
+		-- ayy waddup 
+		math.randomseed(os.clock() * 451)
+		-- sup dawg	
+		index2 = math.random(n2, total)	
+		
 		local Phono1 = gui.get_node("text1")
 		local Phono2 = gui.get_node("text2")
 		phonograms = {"a", "ai", "ar", "au", "aw", "ay", "b", "c", "ch", "ci", "ck", "d", "dge", "e", "ea", "ear", "ed", "ee", "ei", "eigh", "er", "eu", "ew", "ey", "f", "g", "gn", "h", "i", "ie", "igh", "ir", "j", "k", "kn", "l", "m", "n", "ng", "o", "oa", "oe", "oi", "oo", "or", "ou", "ough", "ow", "oy", "p", "ph", "qu", "r", "s", "sh", "si", "t", "tch", "th", "ti", "u", "ui", "ur", "v", "w", "wh", "wor", "wr", "x", "y", "z" }
-		gui.set_text(Phono1, phonograms[ind1])
-		pickedPhono1 = "Selection#" .. ind1
-		gui.set_text(Phono2, phonograms[ind2])
-		pickedPhono2 = "Selection#" .. ind2
-
-		--add phonograms to Session table for use in endscreen
-		table.insert(Session, phonograms[ind1])
-		table.insert(Session, phonograms[ind2])
-
-		--set text equal to variable so other pieces of code can use it that can't see the ind1 & ind2 script
-		phonogram1 = phonograms[ind1]
-		phonogram2 = phonograms[ind2]
+		gui.set_text(Phono1, phonograms[index1])
+		pickedPhono1 = "Selection#" .. index1
+		gui.set_text(Phono2, phonograms[index2])
+		pickedPhono2 = "Selection#" .. index2
 	
-
-
+		--add phonograms to Session table for use in endscreen
+		table.insert(Session, phonograms[index1])
+		table.insert(Session, phonograms[index2])
+	
+		--set text equal to variable so other pieces of code can use it that can't see the ind1 & ind2 script
+		phonogram1 = phonograms[index1]
+		phonogram2 = phonograms[index2]
+	
 		--decides which one is coorect
 		--generates random boolean
 		-- bIsCorrect1 is for left phonogram, 2 for right, both transferred to global variant
-		math.randomseed(os.time() * 10)
-		rand = math.random(100)
-		if rand < 50 then
-			bIsCorrect1 = true
-			bIsCorrect2 = false
-			pickedPhonoSound = "Selection#" .. ind1
-			pickedPhonoValue = ind1
-			if self.active == true then
-				msg.post(pickedPhonoSound, "play_sound", {delay = 0, gain = 2.5})
-			end
-		else
-			bIscorrect1 = false
-			bIsCorrect2 = true
-			pickedPhonoSound = "Selection#" .. ind2
-			pickedPhonoValue = ind2
+
+		-- don't go breaking my code
+		-- plz don't go breaking my code
+		-- not cool, man
+
+		
+		math.randomseed( os.time() * 64)
+		rand = math.random(50)
+
+		-- don't go breaking my code
+		-- plz don't go breaking my code
+		if rand < 25 then
+			bIsCorrectGlobal1 = true
+			bIsCorrectGlobal2 = false		
+			pickedPhonoSound = "Selection#" .. index1
+			pickedPhonoValue = index1
+				if self.active == true then
+					msg.post(pickedPhonoSound, "play_sound", {delay = 0, gain = 2.5})
+				end
+		
+			-- don't do it man
+			-- plz don't do it 
+		elseif rand > 24 then 
+			bIsCorrectGlobal1 = false
+			bIsCorrectGlobal2 = true
+			pickedPhonoSound = "Selection#" .. index2
+			pickedPhonoValue = index2
 			if self.active == true then
 				msg.post(pickedPhonoSound, "play_sound", {delay = 0, gain = 2.5})
 			end
 		end
-	elseif message_id == hash("hide_Selection") then
-		msg.post("#", "disable")
-		self.active = false
+		elseif message_id == hash("hide_Selection") then
+			msg.post("#", "disable")
+			self.active = false
+		end
 	end
-end
--- setting the redundant global correct variables
-bIsCorrectGlobal1 = bIsCorrect1
-bIsCorrectGlobal2 = bIsCorrect2
 
+
+	-- quit breaking my randomizer
 function on_input(self, action_id, action)
 	if action_id == hash("click") and action.pressed and self.active then
 		local Phono1 = gui.get_node("Phono1")
@@ -107,8 +114,8 @@ function on_input(self, action_id, action)
 	
 		-- if left node selected
 		if gui.pick_node(Phono1, action.x, action.y) then
-			-- check if correct answer
-			if bIsCorrect1 == true then
+			-- if left correct
+			if bIsCorrectGlobal1 == true then
 				msg.post("Selection#Congratulations", "play_sound", {delay = 0.2, gain = 2.5})
 				iPlayerScore = iPlayerScore + 1
 				print(iPlayerScore)
@@ -117,7 +124,9 @@ function on_input(self, action_id, action)
 				table.insert(Picked, phonogram1)
 				--table.insert(Picked, 32)
 				-- play correct sound
-			elseif bIsCorrect2 == true then
+
+				-- if left is incorrect
+			elseif bIsCorrectGlobal2 == true then
 				msg.post("Selection#Better", "play_sound", {delay = 0.2, gain = 2.5})
 				print(iPlayerScore)
 				--add picked and correct answers to coresponding tables
@@ -127,9 +136,12 @@ function on_input(self, action_id, action)
 			end 
 			msg.post("#", "hide_Selection")
 			msg.post("default:/GamescreenProxy#GamescreenLoader", "Resume")
-		-- if right node selecte
+
+	
+			-- if right node selected
 		elseif gui.pick_node(Phono2, action.x, action.y) then
-			if bIsCorrect2 == true then
+			-- if right is correct
+			if bIsCorrectGlobal2 == true then
 				msg.post("Selection#Congratulations", "play_sound", {delay = 0.2, gain = 2.5})
 				iPlayerScore = iPlayerScore + 1
 				print(iPlayerScore)
@@ -137,7 +149,9 @@ function on_input(self, action_id, action)
 				table.insert(Correct, phonogram2)
 				table.insert(Picked, phonogram2)
 				-- play correct sound
-			elseif bIsCorrect1 == true then
+				-- if left is correct
+			
+			elseif bIsCorrectGlobal1 == true then
 				msg.post("Selection#Better", "play_sound", {delay = 0.2, gain = 2.5})
 				--add picked and correct answers to coresponding tables
 				table.insert(Picked, phonogram2)
