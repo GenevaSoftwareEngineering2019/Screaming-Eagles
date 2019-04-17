@@ -7,6 +7,12 @@ images {
 images {
   image: "/assets/images/RecapButton.png"
 }
+images {
+  image: "/assets/images/background_images/FinishLine2.png"
+}
+images {
+  image: "/assets/images/background_images/FinishLineInverse.png"
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 0
