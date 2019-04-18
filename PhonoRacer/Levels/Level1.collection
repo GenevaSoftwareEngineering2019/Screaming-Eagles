@@ -343,9 +343,9 @@ instances {
   id: "Finishline"
   prototype: "/GameScreen/Finishline/Finishline.go"
   position {
-    x: 1860.0
+    x: 1747.0
     y: 328.0
-    z: 2.0
+    z: 0.0
   }
   rotation {
     x: 0.0

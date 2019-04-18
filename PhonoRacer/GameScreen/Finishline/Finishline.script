@@ -1,28 +1,38 @@
+local speed = -400
+x = 0
+
 function init(self)
 	msg.post(".", "acquire_input_focus")
-	msg.post("#", "hide_Finishline")
-end
-
-function final(self)
-	-- Add finalization code here
-	-- Remove this function if not needed
+	msg.post("#", "show_Finishline")
 end
 
 function update(self, dt)
-	-- Add update code here
-	-- Remove this function if not needed
+	if x == 1 then
+		print(51)
+		f = go.get_position()
+		f.x = f.x + speed * dt
+		go.set_position(f)
+		if f.x <= 200 then
+			msg.post("EndScreen#EndScreen", "check_Screen")
+		end
+	end
 end
 
 function on_message(self, message_id, message, sender)
-	if on_message_id == hash("show_Finishline") then
-		p.x = 1283
-		go.set_position(p)
-		msg.post("default:/GamescreenProxy#GamescreenLoader", "Freeze")
-		
+	if message_id == hash("MoveFinishline") then
+		if x <= 0 then
+			print(50)
+			x = x + 1
+			return x
+		end
+	end
+	
+	if message_id == hash("show_Finishline") then
+		msg.post("#", "enable")
+		self.active = true
 	elseif message_id == hash("hide_Finishline") then
 		msg.post("#", "disable")
 		self.active = false
-		msg.post("Selection#Selection", "check_Active")
 	end
 end
 
