@@ -18,7 +18,6 @@ function on_message(self, message_id, message, sender)
 			return i
 		elseif i >= 9 then
 			msg.post("Finishline#Finishline", "MoveFinishline")
-			--msg.post("EndScreen#EndScreen", "check_Screen")
 		end
 	end
 

@@ -5,14 +5,14 @@ function init(self)
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id ==hash("check_Screen") then
+	--[[if message_id ==hash("check_Screen") then
 		if EndScreenActive == false then 
 			msg.post("#", "hide_EndScreen")
 		end
 		if EndScreenActive == true then 
 			msg.post("#", "show_EndScreen")
 		end
-	end
+	end]]
 	if message_id == hash("show_EndScreen") then
 		msg.post("#", "enable")
 		self.active = true
